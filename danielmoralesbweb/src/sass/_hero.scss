@@ -1,0 +1,40 @@
+.hero {
+
+    .container {
+        // background: url(#{$path-img}/dm-logo-green.svg) no-repeat;
+        // background-position: center center;
+        background-size:  75% auto;
+
+        @include min-screen('md') {
+            background-position: right 0;
+        }
+    }
+
+    .hero__item {
+        .hero__img {
+            width: 80%;
+    
+            @include min-screen('md') {
+                width: auto;
+            }
+        }
+    }
+}
+
+.hero__item {
+    @include min-screen('md') {
+        display: flex;
+    }
+}
+
+.hero__tagline {
+    color: $text-color-secondary;
+    font-family: $body-font;
+}
+
+.owl-carousel {
+    .owl-item {
+        // background: white;
+        width: 100%;
+    }
+}
