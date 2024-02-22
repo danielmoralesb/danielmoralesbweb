@@ -1,0 +1,44 @@
+.main--styleguide {
+    padding-top: $padding*3;
+
+    .row {
+        &:not(:last-child) {
+            margin-bottom: $margin*4;
+        }
+    }
+}
+
+.styleguide__title {
+    color: $text-color-light;
+    font-family: $body-font;
+    font-size: $font-size-sm+.2;
+    font-weight: $font-weight-black;
+    margin-bottom: $margin*1.5;
+}
+
+.styleguide__subtitle {
+    color: $text-color-light;
+    font-family: $body-font;
+    font-size: $font-size-sm+.15;
+    font-weight: $font-weight-black;
+    margin-top: $margin*1.5;
+    margin-bottom: $margin/1.5;
+}
+
+.styleguide__font-family {
+    color: $text-color-light;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.styleguide__font-weights {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        @include min-screen('md') {
+            margin-right: $margin*2;
+        }
+    }
+}
