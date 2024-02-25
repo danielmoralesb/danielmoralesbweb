@@ -45,3 +45,9 @@
 .paragraph--display {
     color: $text-color-tertiary;
 }
+
+@each $color, $hex in $colors {
+    .bg-color--#{$color} {
+        background-color: $hex;
+    }
+}

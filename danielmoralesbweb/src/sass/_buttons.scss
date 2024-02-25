@@ -1,0 +1,62 @@
+.btn {
+    border: none;
+    background: none;
+    color: $text-color-light;
+    font-weight: $font-weight-black;
+    padding: $padding*1.25 $padding*1.25;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition($transition-time: 0.15s);
+
+    &--primary {
+        &:before {
+            background-color: $brand-primary;
+            box-shadow: 0 $padding/2 0 0 $brand-secondary;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) skew(-20deg);
+            z-index: -1;
+        }
+    }
+
+    &--secondary {
+        color: $text-color-tertiary;
+
+        &:before {
+            border: 3px solid $brand-tertiary;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) skew(-20deg);
+            z-index: -1;
+        }
+
+    }
+
+    &--icon--plus {
+        background-image: url('#{$path-img}/icons/icon-plus.svg');
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+        
+    }
+    &--icon--resume {
+        background-image: url('#{$path-img}/icons/icon-resume.svg');
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+        
+    }
+    &--icon--resume-gold {
+        background-image: url('#{$path-img}/icons/icon-resume-gold.svg');
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+        
+    }
+}

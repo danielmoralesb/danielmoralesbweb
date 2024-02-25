@@ -119,37 +119,112 @@ function App() {
                         </div>
                         {/* Typography */}
                         <div className={toggleState === 1 ? "tabs__content tabs__content--active" : "tabs__content"}>
-                            <h2 className="styleguide__subtitle">Brand</h2>
+                            <h2 className="styleguide__title">Brand</h2>
                             <div className="styleguide__colors">
-                                <div className="styleguide__color -oxford-blue">
-                                    <span className="styleguide__hex">#374458</span>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-primary">
+                                        <span className="styleguide__color__hex">#323550</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">primary</p>
                                 </div>
-                                <div className="styleguide__color -storm-gray">
-                                    <span className="styleguide__hex">#717689</span>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-secondary">
+                                        <span className="styleguide__color__hex">#191B28</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">secondary</p>
                                 </div>
-                                <div className="styleguide__color -ship-cove">
-                                    <span className="styleguide__hex">#7E9BBE</span>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-secondary">
+                                        <span className="styleguide__color__hex">#191B28</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">secondary</p>
+                                </div>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-tertiary">
+                                        <span className="styleguide__color__hex">#DAB279</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">tertiary</p>
+                                </div>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-primary-alt">
+                                        <span className="styleguide__color__hex">#22253A</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">primary alt</p>
+                                </div>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--brand-tertiary-alt">
+                                        <span className="styleguide__color__hex">#967751</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">tertiary alt</p>
                                 </div>
                             </div>
-                            <h2 className="styleguide__subtitle">Utility</h2>
+                            <h2 className="styleguide__title">Utility</h2>
                             <div className="styleguide__colors">
-                                <div className="styleguide__color -valencia">
-                                    <span className="styleguide__hex">#D54430</span>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--black-pearl">
+                                        <span className="styleguide__color__hex">#02040C</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">black pearl</p>
+                                </div>
+                                <div className="styleguide__color">
+                                    <div className="styleguide__color__box bg-color--white">
+                                        <span className="styleguide__color__hex">#FFFFFF</span>
+                                    </div>
+                                    <p className="styleguide__color__variable-name">white</p>
                                 </div>
                             </div>
                         </div>
                         {/* Colors */}
                         <div className={toggleState === 2 ? "tabs__content tabs__content--active" : "tabs__content"}>
-                            <h2 className="styleguide__title">Buttons</h2>
-                            <div className="styleguide__btns">
-                                <button className="btn -primary">Button Primary</button>
-                                <button className="btn -secondary">Button Secondary</button>
-                                <button className="btn -tertiary">Button Tertiary</button>
+                            <div className="row">
+                                <div className="col-sm-12 col-md-4">
+                                    <div className="styleguide__btn-wrapper">
+                                        <h2 className="styleguide__title">Primary</h2>
+                                        <button className="btn btn--primary">Button Primary</button>
+                                    </div>
+                                </div>
+                                <div className="col-sm-12 col-md-4">
+                                    <div className="styleguide__btn-wrapper">
+                                        <h2 className="styleguide__title">Primary with icon</h2>
+                                        <button className="btn btn--primary btn--icon btn--icon--plus">Button Primary</button>
+                                    </div>
+                                </div>
+                                <div className="col-sm-12 col-md-4">
+                                    <div className="styleguide__btn-wrapper">
+                                        <h2 className="styleguide__title">Primary with icon</h2>
+                                        <button className="btn btn--primary btn--icon btn--icon--resume">Button Primary</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-sm-12 col-md-4">
+                                    <div className="styleguide__btn-wrapper">
+                                        <h2 className="styleguide__title">Secondary</h2>
+                                        <button className="btn btn--secondary">Button Secondary</button>
+                                    </div>
+                                </div>
+                                <div className="col-sm-12 col-md-4">
+                                    <div className="styleguide__btn-wrapper">
+                                        <h2 className="styleguide__title">Secondary with icon</h2>
+                                        <button className="btn btn--secondary btn--icon btn--icon--resume-gold">Secondary Primary</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 className="styleguide__title">Tabs</h2>
+                            <div className="tabs">
+                                <div className="tabs__header">
+                                    <div className="tabs__control tabs__control--active">Typography</div>
+                                    <div className="tabs__control">Colors</div>
+                                    <div className="tabs__control">Buttons</div>
+                                    <div className="tabs__control">Images</div>
+                                </div>
                             </div>
                         </div>
+                        {/* Buttons */}
                         <div className={toggleState === 3 ? "tabs__content tabs__content--active" : "tabs__content"}>
                             Images
                         </div>
+                        {/* Images */}
                     </div>
                 </div>
             </main>

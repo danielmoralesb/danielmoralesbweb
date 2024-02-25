@@ -66,8 +66,6 @@ $red-light: #f61118;
 $yellow: #f4c340;
 $someblue: #00c0ff;
 
-
-
 $martinique: #323550;
 $mirage: #191B28;
 $tumbleweed: #DAB279;
@@ -92,21 +90,29 @@ $brand-tertiary-alt: $leather;
 //
 $text-color-light: $white;
 $text-color-medium: $gray;
-$text-color-dark: $black;
+$text-color-dark: $black-pearl;
 $text-color-primary: $brand-primary;
 $text-color-secondary: $brand-secondary;
 $text-color-tertiary: $brand-tertiary;
+
 // ------------------------------------------------------ //
 // Link Colors
 //
 $link-color-primary: $brand-secondary;
 $link-color-secondary: $brand-primary;
+
 // ------------------------------------------------------ //
 // Action Colors
 //
 $danger: $red-light;
 $warning: $yellow;
 $info: $someblue;
+
+// ------------------------------------------------------ //
+// Color Map
+//
+$colors: (brand-primary: $brand-primary, brand-primary-alt: $brand-primary-alt, brand-secondary: $brand-secondary, brand-tertiary: $brand-tertiary, brand-tertiary-alt: $brand-tertiary-alt, black-pearl: $black-pearl, white: $white);
+
 // ------------------------------------------------------ //
 // Typography
 // ------
