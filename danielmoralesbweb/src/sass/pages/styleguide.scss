@@ -95,3 +95,92 @@
         margin-right: $margin;
     }
 }
+
+.styleguide__icon {
+    width: $padding*1.25;
+    margin-bottom: $margin/2;
+
+    &:not(:last-child) {
+        margin-right: $margin/2;
+    }
+}
+
+.styleguide__logo {
+    margin-bottom: $margin*1.5;
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__logos-tech {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+
+.styleguide__logo-tech {
+    margin-bottom: $margin/2;
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__heros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+ }
+
+.styleguide__hero {
+    margin-bottom: $margin*1.5;
+
+    &.hero {
+        &-daniel {
+            width: $padding*10;
+        }
+    
+        &-websites {
+            width: $padding*10;
+        }
+    
+        &-designs {
+            width: $padding*10;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__bg {
+    width: 380px;
+    margin-bottom: $margin*1.5;
+
+    &:last-child {
+        width: 207px;
+    }
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__bg-img {
+    width: 380px;
+    margin-bottom: $margin*1.5;
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__section {
+    margin-bottom: $margin*1.5;
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
