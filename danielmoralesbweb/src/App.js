@@ -444,9 +444,9 @@ function App() {
                 </nav>
                 <div className="footer__copyright-sitemap">
                     <p>
-                        <span>Copyright&#169; 2024 Danel Morales B</span>
-                        |
                         <a href="/">Site Map</a>
+                        |
+                        <span>Copyright&#169; 2024 Danel Morales B</span>
                     </p>
                 </div>
             </div>

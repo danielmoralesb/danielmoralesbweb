@@ -23,7 +23,6 @@
     width: 100%;
     height: 70px;
     z-index: 1000;
-
     @include dark-box-shadow;
 
     @include min-screen('md') {
@@ -42,6 +41,10 @@
         margin-left: 0;
         width: 150px;
     }
+}
+
+.header__logo-link {
+    display: block;
 }
 
 .header__toggle {
@@ -78,9 +81,7 @@
     width: 100%;
     transform: translateY(-100%);
     z-index: 100;
-
     @include dark-box-shadow;
-
     @include transition(transform, .5s, ease);
 
     .header--open & {
@@ -120,13 +121,15 @@
 .header__link {
     color: $text-color-primary;
     display: block;
-    font-size: $font-size-md+.15;
+    font-size: $font-size-md+.5;
     padding: $padding/2 0;
     text-align: center;
     text-decoration: none;
+    @include transition(transform, .5s, ease);
+
 
     @include min-screen('md') {
-        font-size: $font-size-md;
+        font-size: $font-size-md+.25;
         padding: 0 $padding/3;
         text-align: right;
     }
