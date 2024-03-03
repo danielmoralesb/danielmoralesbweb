@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 function NoPage() {
     return(
         <div>
+            <Header />
             <div className="container">
-                <Header />
                 <p>Contact</p>
             </div>
             <Footer />

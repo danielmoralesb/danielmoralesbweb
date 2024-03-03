@@ -44,20 +44,35 @@ h6 {
 h1 {
   font-family: $title-font;
   font-weight: normal;
-  margin-bottom: $margin*3;
+  margin-bottom: $margin*1.25;
+  line-height: $line-height*.85;
+  font-size: $font-size-xl+.5;
   text-align: center;
 
   @include min-screen('md') {
-    font-size: $font-size-xxl+2;
     text-align: left;
+  }
+
+  @include min-screen('lg') {
+    font-size: $font-size-xxl+2;
   }
 }
 
 h2 {
   color: $text-color-tertiary;
   font-family: $title-font-alt;
-  font-size: $font-size-xl;
+  font-size: $font-size-xxl+1;
   font-weight: normal;
+  margin-top: $margin*3;
+  text-align: center;
+
+  @include min-screen('md') {
+    font-size: $font-size-xxl+2;
+  }
+
+  @include min-screen('lg') {
+    font-size: $font-size-xxl+3;
+  }
 }
 
 h3 {
@@ -139,6 +154,56 @@ blockquote {
   &--lg {
     @include max-screen("lg") {
       display: none !important;
+    }
+  }
+}
+
+.block {
+  display: block;
+
+  &--xs {
+    @include min-screen("xs") {
+      display: block;
+    }
+  }
+  &--sm {
+    @include min-screen("sm") {
+      display: block;
+    }
+  }
+  &--md {
+    @include min-screen("md") {
+      display: block;
+    }
+  }
+  &--lg {
+    @include min-screen("lg") {
+      display: block;
+    }
+  }
+}
+
+.inline {
+  display: inline;
+
+  &--xs {
+    @include min-screen("xs") {
+      display: inline;
+    }
+  }
+  &--sm {
+    @include min-screen("sm") {
+      display: inline;
+    }
+  }
+  &--md {
+    @include min-screen("md") {
+      display: inline;
+    }
+  }
+  &--lg {
+    @include min-screen("lg") {
+      display: inline;
     }
   }
 }

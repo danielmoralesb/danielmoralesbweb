@@ -1,4 +1,8 @@
 .main--styleguide {
+    h2 {
+        text-align: left;
+    }
+    
     .row {
         &:not(:last-child) {
             margin-bottom: $margin*4;
@@ -144,6 +148,30 @@
         }
     
         &-designs {
+            width: $padding*10;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: $margin*1.5;
+    }
+}
+
+.styleguide__shis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.styleguide__shi {
+    margin-bottom: $margin*1.5;
+
+    &.shi {
+        &-desktop {
+            width: $padding*20;
+        }
+    
+        &-mobile {
             width: $padding*10;
         }
     }

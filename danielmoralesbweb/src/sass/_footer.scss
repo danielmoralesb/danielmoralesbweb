@@ -1,7 +1,12 @@
 footer {
     border-top: 2px solid $brand-primary;
-    padding: $padding*1.75 0 0 0;
+    padding: $padding*1.25 0 0 0;
+    margin-top: $margin*3;
     @include dark-box-shadow;
+
+    @include min-screen('md') {
+        margin-top: $margin*3;
+    }
 }
 
 .footer__logo-link {
@@ -94,32 +99,52 @@ footer {
 
 .footer__link--codepen {
     background-image: url('#{$path-img}/logos/logo-codepen-blue.svg');
-    background-size: auto 26px;
-    height: 26px;
-    width: 126px;
+    background-size: auto 20px;
+    height: 20px;
+    width: 100px;
 
     &:hover {
         background-image: url('#{$path-img}/logos/logo-codepen.svg');
     }
+
+    @include min-screen('md') {
+        background-size: auto 26px;
+        height: 26px;
+        width: 126px;
+    }
 }
+
 .footer__link--github {
     background-image: url('#{$path-img}/logos/logo-github-blue.svg');
-    background-size: auto 22px;
-    height: 22px;
-    width: 72px;
+    background-size: auto 18px;
+    height: 18px;
+    width: 58px;
 
     &:hover {
         background-image: url('#{$path-img}/logos/logo-github.svg');
     }
+
+    @include min-screen('md') {
+        background-size: auto 22px;
+        height: 22px;
+        width: 72px;
+    }
 }
+
 .footer__link--dribbble {
     background-image: url('#{$path-img}/logos/logo-dribbble-blue.svg');
-    background-size: auto 28px;
-    height: 28px;
-    width: 87px;
+    background-size: auto 22px;
+    height: 22px;
+    width: 69px;
 
     &:hover {
         background-image: url('#{$path-img}/logos/logo-dribbble.svg');
+    }
+
+    @include min-screen('md') {
+        background-size: auto 28px;
+        height: 28px;
+        width: 87px;
     }
 }
 

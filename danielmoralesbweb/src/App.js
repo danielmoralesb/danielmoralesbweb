@@ -6,9 +6,7 @@ import Contact from './pages/Contact';
 import Styleguide from './pages/Styleguide';
 import NoPage from './pages/NoPage';
 
-
 import './sass/styles.scss';
-
 
 function App() {
     return (

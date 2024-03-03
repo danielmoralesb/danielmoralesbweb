@@ -45,6 +45,8 @@ import logoGulp from '../images/logos/logo-gulp.svg';
 import heroDaniel from '../images/heros/hero-daniel@2x.png';
 import heroWebsites from '../images/heros/hero-websites@2x.png';
 import heroDesigns from '../images/heros/hero-designs@2x.png';
+import shiDesktop from '../images/shi/shi-desktop.svg';
+import shiMobile from '../images/shi/shi-mobile.svg';
 import bgClosetag from '../images/backgrounds/bg-closetag.svg';
 import bgSlash from '../images/backgrounds/bg-slash.svg';
 import bgCode from '../images/backgrounds/bg-code@2x.png';
@@ -63,8 +65,8 @@ function Styleguide() {
     }
     return (
         <div>
+            <Header />
             <div className="container">
-                <Header />
                 <main className="main main--styleguide">
                     <h1>Styleguide</h1>
                     <div className="tabs">
@@ -357,6 +359,17 @@ function Styleguide() {
                                                 <img src={heroDaniel} className="styleguide__hero hero-daniel" alt="daniel" />
                                                 <img src={heroWebsites} className="styleguide__hero hero-websites" alt="websites" />
                                                 <img src={heroDesigns} className="styleguide__hero hero-designs" alt="designs" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <div className="styleguide__btn-wrapper">
+                                            <h2 className="styleguide__title">Section Header Images</h2>
+                                            <div className="styleguide__shis">
+                                                <img src={shiDesktop} className="styleguide__shi shi-desktop" alt="code and designs on multiple screens" />
+                                                <img src={shiMobile} className="styleguide__shi shi-mobile" alt="code and designs on multiple screens" />
                                             </div>
                                         </div>
                                     </div>
