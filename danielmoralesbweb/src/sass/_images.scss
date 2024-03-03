@@ -134,15 +134,46 @@
 
 .hero {
     &-daniel {
-        width: 637px;
+        width: 80%;
+
+        @include min-screen('md') {
+            width: 300px;
+        }
+
+        @include min-screen('lg') {
+            width: 637px;
+        }
     }
 
     &-websites {
-        width: 744px;
+        width: 100%;
+
+        @include min-screen('md') {
+            width: 744px;
+        }
     }
 
     &-designs {
-        width: 664px;
+        width: 100%;
+
+        @include min-screen('md') {
+            width: 664px;
+        }
+    }
+}
+
+.shi {
+    &-desktop {
+        @include min-screen('md') {
+            width: 500px;
+        }
+        @include min-screen('lg') {
+            width: 800px;
+        }
+    }
+
+    &-mobile {
+        width: 220px;
     }
 }
 
