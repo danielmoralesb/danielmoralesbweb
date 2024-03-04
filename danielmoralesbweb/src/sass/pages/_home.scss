@@ -55,6 +55,21 @@
 }
 
 .skills {
+    display: grid;
+    grid-gap: $margin/4;
+
+    @include min-screen('md') {
+        grid-template-columns: 50% 50%;
+    }
+
+    @include min-screen('lg') {
+        grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    }
+
+    @include min-screen('xl') {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
     h3 {
         text-align: center;
     }
@@ -63,11 +78,83 @@
         line-height: $line-height*1.25;
         margin-bottom: $margin*2;
         text-align: center;
+
+        @include min-screen('lg') {
+            font-size: $font-size-sm;
+        }
+    }
+
+    .btn {
+        width: auto;
+        margin: $margin*2 auto;
+        grid-column: 1/-1;
     }
 }
 
 .skills__box {
     background-color: $brand-primary;
-    margin-bottom: $margin/4;
-    padding: $padding;
+    padding: $padding*1.5 $padding $padding*2.15 $padding;
+
+    @include min-screen('md') {
+        &--design {
+            h3 {
+                height: 3.4rem;
+            }
+        }
+        &--frameworks {
+            h3 {
+                height: 3.4rem;
+            }
+        }
+    }
+}
+
+.skills__logos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: $margin;
+    margin: 0 auto;
+
+    .skills__box--design & {
+        column-gap: $margin;
+        width: 95%;
+    }
+
+    .skills__box--pl & {
+        column-gap: $margin/2;
+        width: 50%;
+    }
+
+    .skills__box--cm & {
+        width: 75%;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .skills__box--frameworks & {
+        column-gap: $margin;
+        width: 49%;
+    }
+
+    .skills__box--versioncontrol & {
+        width: 40%;
+
+        img {
+            margin-top: auto;
+        }
+    }
+
+    .skills__box--ide & {
+        width: 75%;
+    }
+
+    .skills__box--methodologies & {
+        width: 75%;
+    }
+
+    .skills__box--taskrunner & {
+        width: 75%;
+    }
 }
