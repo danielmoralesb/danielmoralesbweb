@@ -38,6 +38,7 @@ import logoVisualstudio from '../images/logos/logo-visualstudio.svg';
 import logoVscode from '../images/logos/logo-vscode.svg';
 import logoBootstrap from '../images/logos/logo-bootstrap.svg';
 import logoReact from '../images/logos/logo-react.svg';
+import logoAngular from '../images/logos/logo-angular.svg';
 import logoAmp from '../images/logos/logo-amp.svg';
 import logoBem from '../images/logos/logo-bem.svg';
 import logoJenkins from '../images/logos/logo-jenkins.svg';
@@ -343,6 +344,7 @@ function Styleguide() {
                                                 <img src={logoVscode} className="styleguide__logo-tech logo-vscode" alt="vscode" />
                                                 <img src={logoBootstrap} className="styleguide__logo-tech logo-bootstrap" alt="bootstrap" />
                                                 <img src={logoReact} className="styleguide__logo-tech logo-react" alt="react" />
+                                                <img src={logoAngular} className="styleguide__logo-tech logo-angular" alt="angular" />
                                                 <img src={logoAmp} className="styleguide__logo-tech logo-amp" alt="amp" />
                                                 <img src={logoBem} className="styleguide__logo-tech logo-bem" alt="bem" />
                                                 <img src={logoJenkins} className="styleguide__logo-tech logo-jenkins" alt="jenkins" />
