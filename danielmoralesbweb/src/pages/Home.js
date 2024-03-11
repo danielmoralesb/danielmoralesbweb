@@ -130,7 +130,7 @@ function Home() {
                                 <img src={logoSourcetree} className="logo-sourcetree" alt="sourcetree" />
                             </div>
                         </div>
-                        <div className={toggleStateSkills === 1 ? "skills__box skills__skills__box--ide" : "skills__box skills__box--ide hidden"}>
+                        <div className={toggleStateSkills === 1 ? "skills__box skills__box--ide" : "skills__box skills__box--ide hidden"}>
                             <h3>IDE</h3>
                             <p>I love creating lyouts, icons and any other visual asset that can help a project send the expected message.</p>
                             <div className="skills__logos">
@@ -157,6 +157,30 @@ function Home() {
                     </div>
                 </section>
             </div>
+                <section>
+                    <h2>Capabilities</h2>
+                    <div className="capabilities">
+                        <div className="capabilities__box capabilities__box--troubleshooting">
+                            <div className="container">
+                                <h4><span className="block">Large Capacity</span> <span className="block">for Troubleshooting</span></h4>
+                                <p>My development experience has taught me how to locate and fix the root causes of HTML, CSS and JavaScript issues on existing or in-development web applications. This debugging skill also helps while trying decipher how file compiling works and styling verification while comparing web renderings to expected designs during the development process.</p>
+                            </div>
+                        </div>
+                        <div className="capabilities__box capabilities__box--designskills">
+                            <div className="container">
+                                <h4>Design Skills</h4>
+                                <p>My graphic design skills allow me to create and update screens and pages of web applications as well as multiple components, backgrounds,  icons, rasterized images, and vectors. I understand the necessary file types needed in a web application: png, jpg or svgs.</p>
+                                <p>My knowledge allows my to me choose the necessary paths (depening on the project basis) to create and render icons/images with only CSS or an Icon Library such as Font Awesome or Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div className="capabilities__box capabilities__box--teamwork">
+                            <div className="container">
+                                <h4>Team Work</h4>
+                                <p>I have collaborated with multiple teams throughout my career: back-end developers, ux/ui designers and project managers. This experience helps me understand, negotiate and succeed on the team effort required to complete any project or task.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             <Footer />
         </div>
     )
