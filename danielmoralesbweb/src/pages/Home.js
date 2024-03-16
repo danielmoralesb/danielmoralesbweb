@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TextSlider from "../components/TextSlider";
 
 import heroDaniel from '../images/heros/hero-daniel@2x.png';
 import shiDesktop from '../images/shi/shi-desktop.svg';
@@ -181,6 +182,12 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                <div className="container">
+                    <section className="testimonials">
+                        <h2>Testimonials</h2>
+                        <TextSlider />
+                    </section>
+                </div>
             <Footer />
         </div>
     )

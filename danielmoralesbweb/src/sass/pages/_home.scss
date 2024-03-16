@@ -203,10 +203,14 @@
 
 .capabilities__box {
     background-color: $brand-primary;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
     margin-bottom: $margin;
     padding: $padding*3 0 $padding*10;
 
     @include min-screen('md') {
+        margin-bottom: $margin*1.5;
         padding: $padding;
     }
 
@@ -216,10 +220,7 @@
 }
 
 .capabilities__box--troubleshooting {
-    background-position: bottom center;
-    background-repeat: no-repeat;
     padding-bottom: calc(175px + 2rem);
-    position: relative;
 
     &:before {
         content: '';
@@ -265,15 +266,89 @@
     }
 }
 
-.capabilities__box--teamwork {
-    background-position: bottom center;
-    background-repeat: no-repeat;
+.capabilities__box--designskills {
     padding-bottom: calc(175px + 2rem);
-    position: relative;
 
     &:before {
         content: '';
-        background-image: url('#{$path-img}/backgrounds/bg-code-mobile@2x.jpg');
+        background-image: url('#{$path-img}/backgrounds/bg-designs-mobile@2x.jpg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 175px;
+    }
+
+    @include min-screen('md') {
+        background-image: url('#{$path-img}/backgrounds/bg-designs@2x.png');
+        background-position: center left -357px;
+        background-size: contain;
+        padding: $padding*3 $padding;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    @include min-screen('lg') {
+        background-position: center left -150px;
+    }
+
+    @include min-screen('xl') {
+        background-position: center left -50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    h4 {
+        text-align: right;
+
+        @include min-screen('md') {
+            text-align: left;
+            width: 60%;
+        }
+
+        @include min-screen('lg') {
+            width: 45%;
+        }
+
+        @include min-screen('xl') {
+            width: 55%;
+        }
+    }
+
+    p {
+        text-align: right;
+
+        @include min-screen('md') {
+            text-align: left;
+            width: 60%;
+        }
+
+        @include min-screen('lg') {
+            width: 45%;
+        }
+
+        @include min-screen('xl') {
+            width: 55%;
+        }
+    }
+}
+
+.capabilities__box--teamwork {
+    padding-bottom: calc(175px + 2rem);
+
+    &:before {
+        content: '';
+        background-image: url('#{$path-img}/backgrounds/bg-team-mobile@2x.jpg');
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
