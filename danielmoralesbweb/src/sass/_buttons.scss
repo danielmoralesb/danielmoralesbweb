@@ -3,11 +3,15 @@
     background: none;
     color: $text-color-light;
     font-weight: $font-weight-black;
-    padding: $padding $padding*1.25;
+    padding: $padding*.75 $padding;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     @include transition($transition-time: 0.15s);
+
+    @include min-screen('md') {
+        padding: $padding $padding*1.25;
+    }
 
     &--primary {
         &:before {
@@ -36,7 +40,7 @@
         color: $text-color-tertiary;
 
         &:before {
-            border: 3px solid $brand-tertiary;
+            border: 1px solid $brand-tertiary;
             content: '';
             position: absolute;
             height: 100%;
@@ -45,6 +49,10 @@
             left: 50%;
             transform: translate(-50%,-50%) skew(-20deg);
             z-index: -1;
+
+            @include min-screen('lg') {
+                border-width: 3px;
+            }
         }
 
         &:hover {
@@ -105,11 +113,16 @@
     }
 
     &--icon--resume-gold {
-        padding-top: $padding*.9215;
-        padding-bottom: $padding*.9215;
+        padding-top: $padding*.7;
+        padding-bottom: $padding*.7;
 
         @include min-screen('md') {
             justify-content: flex-start;
+        }
+
+        @include min-screen('lg') {
+            padding-top: $padding*.9215;
+            padding-bottom: $padding*.9215;
         }
 
         &:after {
@@ -161,7 +174,7 @@ a {
             color: $text-color-tertiary;
     
             &:before {
-                border: 3px solid $brand-tertiary;
+                border: 1px solid $brand-tertiary;
                 content: '';
                 position: absolute;
                 height: 100%;
@@ -170,6 +183,10 @@ a {
                 left: 50%;
                 transform: translate(-50%,-50%) skew(-20deg);
                 z-index: -1;
+
+                @include min-screen('lg') {
+                    border-width: 3px;
+                }
             }
     
             &:hover {
@@ -186,8 +203,13 @@ a {
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            padding-right: $padding*1.5;
-            padding-left: $padding*1.5;
+            padding-right: $padding*1.15;
+            padding-left: $padding*1.15;
+
+            @include min-screen('lg') {
+                padding-right: $padding*1.5;
+                padding-left: $padding*1.5;
+            }
     
             &:after {
                 content: '';
@@ -230,11 +252,16 @@ a {
         }
     
         &--icon--resume-gold {
-            padding-top: $padding*.9215;
-            padding-bottom: $padding*.9215;
-    
+            padding-top: $padding*.7;
+            padding-bottom: $padding*.7;
+
             @include min-screen('md') {
                 justify-content: flex-start;
+            }
+
+            @include min-screen('lg') {
+                padding-top: $padding*.9215;
+                padding-bottom: $padding*.9215;
             }
 
             &:after {
