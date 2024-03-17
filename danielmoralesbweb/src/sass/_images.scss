@@ -149,6 +149,14 @@
         width: 100%;
 
         @include min-screen('md') {
+            width: 400px;
+        }
+
+        @include min-screen('lg') {
+            width: 400px;
+        }
+
+        @include min-screen('xl') {
             width: 744px;
         }
     }

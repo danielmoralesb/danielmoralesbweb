@@ -147,6 +147,9 @@
     text-decoration: none;
     @include transition(transform, .5s, ease);
 
+    .active & {
+        color: $white;
+    }
 
     @include min-screen('md') {
         font-size: $font-size-md+.25;

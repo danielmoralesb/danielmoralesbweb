@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import logo from '../images/daniel-morales-logo.svg';
-
 function Header() {
     const [menuState, setMenuState] = useState(false);
     return (
@@ -19,15 +18,19 @@ function Header() {
                 </div>
                 <nav className="header__nav-wrapper">
                     <ul className="header__nav">
-                        <li className="header__item"><a href="websites" className="header__link"><span>Websites</span></a></li>
-                        <li className="header__item"><a href="designs" className="header__link"><span>Designs</span></a></li>
-                        <li className="header__item"><a href="contact" className="header__link"><span>Contact</span></a></li>
-                        <li className="header__item"><a href="styleguide" className="header__link"><span>Styleguide</span></a></li>
+                        <li className={`header__item ${isActive("websites")}`}><a href="websites" className="header__link"><span>Websites</span></a></li>
+                        <li className={`header__item ${isActive("designs")}`}><a href="designs" className="header__link"><span>Designs</span></a></li>
+                        <li className={`header__item ${isActive("contact")}`}><a href="contact" className="header__link"><span>Contact</span></a></li>
+                        <li className={`header__item ${isActive("styleguide")}`}><a href="styleguide" className="header__link"><span>Styleguide</span></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
     );
+
+    function isActive(path) {
+        return window.location.pathname === `/${path}` ? "active" : "";
+    }
 }
 
 export default Header;

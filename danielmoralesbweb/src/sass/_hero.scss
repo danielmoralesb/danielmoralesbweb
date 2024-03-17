@@ -45,7 +45,7 @@
     margin-bottom: $margin;
 
     @include min-screen('md') {
-        margin-bottom: 0;
+        margin-bottom: $margin;
     }
 
     img {
@@ -64,7 +64,7 @@
     }
 
     @include min-screen('lg') {
-        padding-top: $padding*4;
+        padding-top: $padding*3;
     }
 }
 
@@ -160,7 +160,7 @@
         background-image: url('#{$path-img}/logos/logo-codepen-blue.svg');
     }
 
-    @include min-screen('md') {
+    @include min-screen('lg') {
         background-size: auto 26px;
         height: 26px;
         width: 126px;
@@ -177,7 +177,7 @@
         background-image: url('#{$path-img}/logos/logo-github-blue.svg');
     }
 
-    @include min-screen('md') {
+    @include min-screen('lg') {
         background-size: auto 22px;
         height: 22px;
         width: 72px;
@@ -194,7 +194,7 @@
         background-image: url('#{$path-img}/logos/logo-dribbble-blue.svg');
     }
 
-    @include min-screen('md') {
+    @include min-screen('lg') {
         background-size: auto 28px;
         height: 28px;
         width: 87px;
