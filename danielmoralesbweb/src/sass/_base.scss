@@ -22,7 +22,12 @@ a {
 }
 
 p {
+  line-height: $line-height*1.25;
   margin: $padding/2 0 0;
+
+  @include min-screen('lg') {
+    line-height: $line-height*1.6;
+  }
 
   a {
     color: $text-color-tertiary;
