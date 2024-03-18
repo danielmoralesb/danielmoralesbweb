@@ -78,7 +78,32 @@ function NoPage() {
                             </section>
                         </div>
                         <div className={toggleState === 1 ? "tabs__content tabs__content--active" : "tabs__content"}>
-                            <p>Testing</p>
+                            <section className="project">
+                                <div className="project__inner container">
+                                    <div className="project__text">
+                                        <h3 className="project__title">Noha's Ark</h3>
+                                        <p className="project__date">June 2013</p>
+                                        <p className="project__description">Noah’s Ark is an animal sanctuary that was in need of a new website design. I was asked to create a few design variations that were inline with the design trends at the time. I provided 3 separate designs with custom variations in coloring, iconography, imagery and more.</p>
+                                        <p className="project__link"><a href="/" title="view noah's ark design">View design</a></p>
+                                    </div>
+                                    <div className="project__image">
+                                        <img src={sectionNoahsark} alt="noah's ark" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="project">
+                                <div className="project__inner container">
+                                    <div className="project__text">
+                                        <h3 className="project__title">NRT Expo</h3>
+                                        <p className="project__date">February 2018</p>
+                                        <p className="project__description">NRT expo was a client that needed a small site that provided information about the upcoming event as well as the tickets sales for it. I kept a technology look with a modern layout using the selected color palette.</p>
+                                        <p className="project__link"><a href="/">View design</a></p>
+                                    </div>
+                                    <div className="project__image">
+                                        <img src={sectionNrt} alt="nrt expo" />
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div className={toggleState === 2 ? "tabs__content tabs__content--active" : "tabs__content"}>
                             <p>Freelance</p>
