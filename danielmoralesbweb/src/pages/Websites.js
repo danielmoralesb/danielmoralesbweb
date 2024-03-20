@@ -6,7 +6,9 @@ import Footer from "../components/Footer";
 import heroWebsites from '../images/heros/hero-websites@2x.png';
 import sectionHpp from '../images/sections/section-hpp@2x.png';
 import sectionWalpeco from '../images/sections/section-walpeco@2x.png';
+import sectionAmp from '../images/sections/section-amp@2x.png';
 import sectionApollo from '../images/sections/section-apollo@2x.png';
+import sectionCelistics from '../images/sections/section-celistics@2x.png';
 
 
 function NoPage() {
@@ -58,7 +60,7 @@ function NoPage() {
                                         <h3 className="project__title">Hospitality Performance Partners</h3>
                                         <p className="project__date">January 2012</p>
                                         <p className="project__description">I started putting my knowledge and skills to the test as I was advancing on my college career. John Masi, a teacher and entrepreneur at the time needed a website to showcase the story and services of his company. I worked with him from the designing of the company’s logo as well as the future website and eventually developing it bringing the project full circle.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/hospitality-performance-partners/" title="visit hpp site">View site</a></p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/hospitality-performance-partners/" title="visit hpp site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionHpp} alt="hpp" />
@@ -71,7 +73,7 @@ function NoPage() {
                                         <h3 className="project__title">Walpeco</h3>
                                         <p className="project__date">February 2011</p>
                                         <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site">View site</a></p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionWalpeco} alt="walpeco" />
@@ -85,11 +87,11 @@ function NoPage() {
                                     <div className="project__text">
                                         <h3 className="project__title">AMP</h3>
                                         <p className="project__date">January 2012</p>
-                                        <p className="project__description">I started putting my knowledge and skills to the test as I was advancing on my college career. John Masi, a teacher and entrepreneur at the time needed a website to showcase the story and services of his company. I worked with him from the designing of the company’s logo as well as the future website and eventually developing it bringing the project full circle.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/hospitality-performance-partners/" title="visit hpp site">View site</a></p>
+                                        <p className="project__description">More than 5 years ago one of the projects that I was working with on my current company required the use of AMP (Accelerated Mobile Pages). This framework needed to be implemented without breaking the current sitecore site. I designed and developed this AMP test site in order to learn the impletementation of such framework.</p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/amp/" title="visit the amp site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
-                                        <img src={sectionHpp} alt="hpp" />
+                                        <img src={sectionAmp} alt="amp" />
                                     </div>
                                 </div>
                             </section>
@@ -113,8 +115,8 @@ function NoPage() {
                                     <div className="project__text">
                                         <h3 className="project__title">Apollo Broad Band Corp</h3>
                                         <p className="project__date">July 2015</p>
-                                        <p className="project__description">I started putting my knowledge and skills to the test as I was advancing on my college career. John Masi, a teacher and entrepreneur at the time needed a website to showcase the story and services of his company. I worked with him from the designing of the company’s logo as well as the future website and eventually developing it bringing the project full circle.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/apollo-broadband/index.php" title="visit apollo site">View site</a></p>
+                                        <p className="project__description">This project was lead by Camilo Sanchez one of founders of Apollo Broad Band Group from Colombia and myself. I got stated with the company's identity and mote as well as its projects. The brainstorming and development resulted in a small but well put website at the time</p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/apollo-broadband/index.php" title="visit apollo site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionApollo} alt="hpp" />
@@ -124,13 +126,13 @@ function NoPage() {
                             <section className="project">
                                 <div className="project__inner container">
                                     <div className="project__text">
-                                        <h3 className="project__title">Walpeco</h3>
+                                        <h3 className="project__title">Celistics</h3>
                                         <p className="project__date">February 2011</p>
                                         <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site">View site</a></p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/celistics/index.php" title="visit celistics site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
-                                        <img src={sectionWalpeco} alt="walpeco" />
+                                        <img src={sectionCelistics} alt="celistics" />
                                     </div>
                                 </div>
                             </section>
