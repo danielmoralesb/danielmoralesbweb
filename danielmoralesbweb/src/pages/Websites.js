@@ -7,8 +7,11 @@ import heroWebsites from '../images/heros/hero-websites@2x.png';
 import sectionHpp from '../images/sections/section-hpp@2x.png';
 import sectionWalpeco from '../images/sections/section-walpeco@2x.png';
 import sectionAmp from '../images/sections/section-amp@2x.png';
+import sectionFitness from '../images/sections/section-fitness@2x.png';
 import sectionApollo from '../images/sections/section-apollo@2x.png';
 import sectionCelistics from '../images/sections/section-celistics@2x.png';
+import sectionJmm from '../images/sections/section-jmm@2x.png';
+import sectionAlp from '../images/sections/section-alp@2x.png';
 
 
 function NoPage() {
@@ -98,13 +101,13 @@ function NoPage() {
                             <section className="project">
                                 <div className="project__inner container">
                                     <div className="project__text">
-                                        <h3 className="project__title">Walpeco</h3>
-                                        <p className="project__date">February 2011</p>
-                                        <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site">View site</a></p>
+                                        <h3 className="project__title">Fitness</h3>
+                                        <p className="project__date">June 2020</p>
+                                        <p className="project__description">Fitness was part of a 3 One Page Sites that my Web Lead assigned to the Front End team at my old company, where we had to develop these sites on a responsive manner while using the latest technologies at the time. One this case I began to explore the potential of Flexbox.</p>
+                                        <p className="project__link"><a href="http://danielmoralesb.com/fitness/index.html" title="visit the fitness site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
-                                        <img src={sectionWalpeco} alt="walpeco" />
+                                        <img src={sectionFitness} alt="fitness" />
                                     </div>
                                 </div>
                             </section>
@@ -141,26 +144,26 @@ function NoPage() {
                             <section className="project">
                                 <div className="project__inner container">
                                     <div className="project__text">
-                                        <h3 className="project__title">Hospitality Performance Partners</h3>
-                                        <p className="project__date">January 2012</p>
-                                        <p className="project__description">I started putting my knowledge and skills to the test as I was advancing on my college career. John Masi, a teacher and entrepreneur at the time needed a website to showcase the story and services of his company. I worked with him from the designing of the company’s logo as well as the future website and eventually developing it bringing the project full circle.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/hospitality-performance-partners/" title="visit hpp site">View site</a></p>
+                                        <h3 className="project__title">Joyce Meyer Ministries</h3>
+                                        <p className="project__date">January 2017</p>
+                                        <p className="project__description">I was part of the team that tackle one of the largest Web Ministries Projects the USA at the time. I was the lead fron-end developer of the project. I worked along with the UX/UI teams to develope the components that were used all along the site. I also make sure that the site was responsive at all times by addressing multiple break points.</p>
+                                        <p className="project__link"><a href="https://www.joycemeyer.org/" title="visit jmm site"  target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
-                                        <img src={sectionHpp} alt="hpp" />
+                                        <img src={sectionJmm} alt="jmm" />
                                     </div>
                                 </div>
                             </section>
                             <section className="project">
                                 <div className="project__inner container">
                                     <div className="project__text">
-                                        <h3 className="project__title">Walpeco</h3>
-                                        <p className="project__date">February 2011</p>
-                                        <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site">View site</a></p>
+                                        <h3 className="project__title">Another Life is Possible</h3>
+                                        <p className="project__date">December 2019</p>
+                                        <p className="project__description">I worked on this project with the sitecore and design teams for 8 months or so where I had the task of developing the front-end components for mobile and desktop that also addressed multiple functionalities such as dropdown navigation, scrolling loading content with ajax, complex layout with CSS technologies using the calc function among other front-end accomplishments.</p>
+                                        <p className="project__link"><a href="anotherlifeispossible.com" title="visit the another life is possible site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
-                                        <img src={sectionWalpeco} alt="walpeco" />
+                                        <img src={sectionAlp} alt="another life is possible" />
                                     </div>
                                 </div>
                             </section>
