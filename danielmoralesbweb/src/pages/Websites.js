@@ -36,10 +36,11 @@ function NoPage() {
                     <p><strong>Collaboration</strong>, <strong>adaptability</strong> and <strong>troubleshooting</strong> have always been part of my web development career. I have <strong>passion for web development</strong> and strive for <strong>finding solutions</strong> for the projects that I am involved with.</p>
                     <nav className="hero__nav-wrapper">
                         <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/" className="btn btn--primary btn--icon btn--icon--resume">Resume</a></li>
+                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
+                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
+                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
+                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
+                            <li className="hero__item"><a href="http://danielmoralesb.com/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Mroales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -169,6 +170,34 @@ function NoPage() {
                             </section>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <h2>Project List</h2>
+                    <p className="text-center">This is a list of multiple projects that I have worked on throughout my career.</p>
+                    <ul className="project-list">
+                        <li><a href="/amp" target="_blank" title="AMP">AMP</a></li>
+                        <li><a href="/apollo-broadband/index.php" target="_blank" title="Apollo Broad Band">Apollo Broad Band</a></li>
+                        <li><a href="/boogerbooks" target="_blank" title="Boogerbooks">Boogerbooks</a></li>
+                        <li><a href="/brandly/index.html" target="_blank" title="Brandly">Brandly</a></li>
+                        <li><a href="/celistics/index.php" target="_blank" title="Celistics">Celistics</a></li>
+                        <li><a href="/diannewagner/index.php" target="_blank" title="Dianner Wagner">Dianne Wagner</a></li>
+                        <li><a href="/fitness/index.html" target="_blank" title="Fitness">Fitness</a></li>
+                        <li><a href="/goodinc/index.html" target="_blank" title="GoodInc">GoodInc</a></li>
+                        <li><a href="/hlbspecialties" target="_blank" title="HLB Specialties">HLB Specialties</a></li>
+                        <li><a href="/hospitality-performance-partners" target="_blank" title="Hospitality Performance Partners">Hospitality Performance Partners</a></li>
+                        <li><a href="/jessicaweot/index.html" target="_blank" title="Jessica Weot">Jessica Weot</a></li>
+                        <li><a href="/makeupbyyana" target="_blank" title="Makeup By Yana">Makeup By Yana</a></li>
+                        <li><a href="/movilway/index.php" target="_blank" title="Movilway">Movilway</a></li>
+                        <li><a href="/oneway" target="_blank" title="Oneway">Oneway</a></li>
+                        <li><a href="/prohitsports" target="_blank" title="Prohitsports">Prohitsports</a></li>
+                        <li><a href="/rolfingwithjorge/index.php" target="_blank" title="Rolfing with Jorge">Rolfing with Jorge</a></li>
+                        <li><a href="/softball-tracker" target="_blank" title="Softball Tracker">Softball Tracker</a></li>
+                        <li><a href="/tintperfectioncorp/index.html" target="_blank" title="Tint Perfection Corp">Tint Perfection Corp</a></li>
+                        <li><a href="/walpeco/index.php" target="_blank" title="Walpeco">Walpeco</a></li>
+                        <li><a href="/your-website-studio/index.php" target="_blank" title="Your Website Studio">Your Website Studio</a></li>
+                    </ul>
                 </div>
             </section>
             <Footer />

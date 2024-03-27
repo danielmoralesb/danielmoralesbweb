@@ -9,6 +9,9 @@ import sectionNrt from '../images/sections/section-nrt@2x.png';
 import sectionIgnium from '../images/sections/section-ignium@2x.png';
 import sectionBeachauto from '../images/sections/section-beachauto@2x.png';
 import sectionSeeyou from '../images/sections/section-seeyou@2x.png';
+import sectionOneway from '../images/sections/section-oneway@2x.png';
+import sectionTrekalert from '../images/sections/section-trekalert@2x.jpg';
+import sectionInbound from '../images/sections/section-inbound@2x.jpg';
 
 function NoPage() {
     const [toggleState, setToggleState] = useState(0);
@@ -32,10 +35,11 @@ function NoPage() {
                     <p>From <strong>websites</strong> to <strong>custom graphics</strong>, icons and <strong>unique lodo desings</strong> I like to be involved on creating and finding graphic solotions in order to complete projects smoothly. </p>
                     <nav className="hero__nav-wrapper">
                         <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/" className="btn btn--primary btn--icon btn--icon--resume">Resume</a></li>
+                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
+                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
+                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
+                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
+                            <li className="hero__item"><a href="http://danielmoralesb.com/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Mroales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -109,7 +113,7 @@ function NoPage() {
                             </section>
                         </div>
                         <div className={toggleState === 2 ? "tabs__content tabs__content--active" : "tabs__content"}>
-                        <section className="project">
+                            <section className="project">
                                 <div className="project__inner container">
                                     <div className="project__text">
                                         <h3 className="project__title">Seeyou</h3>
@@ -122,9 +126,47 @@ function NoPage() {
                                     </div>
                                 </div>
                             </section>
+                            <section className="project">
+                                <div className="project__inner container">
+                                    <div className="project__text">
+                                        <h3 className="project__title">Oneway</h3>
+                                        <p className="project__date">January 2012</p>
+                                        <p className="project__description">As a student I took charge on a series of freelance projects for the Movilway family of companies, the iconography of for the Oneway project came from the design Identity that I developed for Movilway based on one of the biggest communication companies at the time, Skype.</p>
+                                        <p className="project__link"><a href="/">View design</a></p>
+                                    </div>
+                                    <div className="project__image">
+                                        <img src={sectionOneway} alt="oneway" />
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div className={toggleState === 3 ? "tabs__content tabs__content--active" : "tabs__content"}>
-                            <p>Professional</p>
+                            <section className="project">
+                                <div className="project__inner container">
+                                    <div className="project__text">
+                                        <h3 className="project__title">Trekalert</h3>
+                                        <p className="project__date">May 2012</p>
+                                        <p className="project__description">As a freelance student I was able to work on the project for Trekalert, a device before smartphones that allowed you to send your detailed itinerary to your emergency contacts before you go on your hike. I created a registration page that used the elements and colors of its logo and identity.</p>
+                                        <p className="project__link"><a href="/">View design</a></p>
+                                    </div>
+                                    <div className="project__image">
+                                        <img src={sectionTrekalert} alt="trekalert" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="project">
+                                <div className="project__inner container">
+                                    <div className="project__text">
+                                        <h3 className="project__title">Inbound Boulder</h3>
+                                        <p className="project__date">October 2014</p>
+                                        <p className="project__description">As a freelance developer/designer I was able to work on the Inbound Boulder design project for a banner that was going to be used on different social media platforms</p>
+                                        <p className="project__link"><a href="/">View design</a></p>
+                                    </div>
+                                    <div className="project__image">
+                                        <img src={sectionInbound} alt="inbound" />
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>

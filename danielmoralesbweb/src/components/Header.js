@@ -21,7 +21,6 @@ function Header() {
                         <li className={`header__item ${isActive("websites")}`}><a href="websites" className="header__link"><span>Websites</span></a></li>
                         <li className={`header__item ${isActive("designs")}`}><a href="designs" className="header__link"><span>Designs</span></a></li>
                         <li className={`header__item ${isActive("contact")}`}><a href="contact" className="header__link"><span>Contact</span></a></li>
-                        <li className={`header__item ${isActive("styleguide")}`}><a href="styleguide" className="header__link"><span>Styleguide</span></a></li>
                     </ul>
                 </nav>
             </div>

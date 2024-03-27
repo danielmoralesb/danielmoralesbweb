@@ -1,0 +1,26 @@
+.project-list {
+    list-style-type: none;
+    padding: $padding*2 0 0;
+    text-align: center;
+
+    @include min-screen('lg') {
+        display: grid;
+    }
+
+    li {
+        margin-bottom: $margin/3;
+    
+    }
+
+    a {
+        background-color: $brand-primary;
+        color: $text-color-light;
+        display: block;
+        padding: $padding;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $brand-secondary;
+        }
+    }
+}

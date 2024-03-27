@@ -1,6 +1,4 @@
 .hero {
-    margin-bottom: $margin;
-
     @include min-screen('md') {
         margin-bottom: $margin*2;
     }
@@ -57,13 +55,11 @@
 }
 
 .hero__nav-wrapper {
+    padding-top: $padding*2;
+
     @include min-screen('md') {
         display: flex;
         align-items: center;
-        padding-top: $padding*3;
-    }
-
-    @include min-screen('lg') {
         padding-top: $padding*3;
     }
 }
@@ -74,7 +70,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     list-style-type: none;
-    padding: $padding 0;
+    padding: $padding 0 0;
 
     @include min-screen('md') {
         flex-direction: row;
@@ -98,9 +94,14 @@
         order: 3;
     }
 
+    &:nth-child(4) {
+        order: 4;
+        margin-bottom: 0;
+    }
+
     &:last-child {
         order: 0;
-        margin-bottom: $margin*1.5;
+        margin-bottom: $margin*2.5;
     }
 
     @include min-screen('md') {
@@ -122,9 +123,20 @@
             order: 3;
             margin-bottom: 0;
         }
+    
+        &:last-child {
+            order: 4;
+            margin-bottom: 0;
+        }
 
         &:not(:first-child) {
             margin-left: $margin;
+        }
+    }
+
+    @include min-screen('lg') {
+        &:not(:first-child) {
+            margin-left: $margin*1.5;
         }
     }
 }
@@ -147,6 +159,23 @@
 
     &:hover {
         color: $white;
+    }
+}
+
+.hero__link--linkedin {
+    background-image: url('#{$path-img}/logos/logo-linkedin.svg');
+    background-size: auto 25px;
+    height: 25px;
+    width: 100px;
+
+    &:hover {
+        background-image: url('#{$path-img}/logos/logo-linkedin-blue.svg');
+    }
+
+    @include min-screen('lg') {
+        background-size: auto 31px;
+        height: 31px;
+        width: 123px;
     }
 }
 
