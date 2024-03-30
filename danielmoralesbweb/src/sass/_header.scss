@@ -54,6 +54,39 @@
 
 .header__logo-link {
     display: block;
+    height: 38.38px;
+    position: relative;
+
+    @include min-screen('md') {
+        height: 57.57px;
+    }
+
+    .header__logo-image-white {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        .header__logo-image {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .header__logo-image-white {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.header__logo-image, 
+.header__logo-image-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: visibility .5s, opacity 0.5s linear;
 }
 
 .header__toggle {
@@ -145,7 +178,7 @@
     padding: $padding/2 0;
     text-align: center;
     text-decoration: none;
-    @include transition(transform, .5s, ease);
+    @include transition(all, .5s, ease);
 
     .active & {
         color: $white;

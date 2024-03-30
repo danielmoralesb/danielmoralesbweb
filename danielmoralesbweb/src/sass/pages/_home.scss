@@ -1,4 +1,10 @@
 .home-intro {
+    margin-top: $margin*3;
+
+    @include min-screen('md') {
+        margin-top: 0;
+    }
+
     p {
         color: $text-color-light;
         line-height: $line-height*1.5;

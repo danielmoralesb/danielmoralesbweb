@@ -20,7 +20,7 @@ function NoPage() {
     const toggleTab = (index) => {
         setToggleState(index)
     }
-    return(
+    return (
         <div className="websites-page">
             <Header />
             <div className="container">
@@ -36,10 +36,11 @@ function NoPage() {
                     <p><strong>Collaboration</strong>, <strong>adaptability</strong> and <strong>troubleshooting</strong> have always been part of my web development career. I have <strong>passion for web development</strong> and strive for <strong>finding solutions</strong> for the projects that I am involved with.</p>
                     <nav className="hero__nav-wrapper">
                         <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/" className="btn btn--primary btn--icon btn--icon--resume">Resume</a></li>
+                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
+                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
+                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
+                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
+                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -63,7 +64,7 @@ function NoPage() {
                                         <h3 className="project__title">Hospitality Performance Partners</h3>
                                         <p className="project__date">January 2012</p>
                                         <p className="project__description">I started putting my knowledge and skills to the test as I was advancing on my college career. John Masi, a teacher and entrepreneur at the time needed a website to showcase the story and services of his company. I worked with him from the designing of the company’s logo as well as the future website and eventually developing it bringing the project full circle.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/hospitality-performance-partners/" title="visit hpp site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/hospitality-performance-partners/" title="visit hpp site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionHpp} alt="hpp" />
@@ -76,7 +77,7 @@ function NoPage() {
                                         <h3 className="project__title">Walpeco</h3>
                                         <p className="project__date">February 2011</p>
                                         <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/walpeco/index.php" title="visit walpeco site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/walpeco/index.php" title="visit walpeco site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionWalpeco} alt="walpeco" />
@@ -91,7 +92,7 @@ function NoPage() {
                                         <h3 className="project__title">AMP</h3>
                                         <p className="project__date">January 2012</p>
                                         <p className="project__description">More than 5 years ago one of the projects that I was working with on my current company required the use of AMP (Accelerated Mobile Pages). This framework needed to be implemented without breaking the current sitecore site. I designed and developed this AMP test site in order to learn the impletementation of such framework.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/amp/" title="visit the amp site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/amp/" title="visit the amp site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionAmp} alt="amp" />
@@ -104,7 +105,7 @@ function NoPage() {
                                         <h3 className="project__title">Fitness</h3>
                                         <p className="project__date">June 2020</p>
                                         <p className="project__description">Fitness was part of a 3 One Page Sites that my Web Lead assigned to the Front End team at my old company, where we had to develop these sites on a responsive manner while using the latest technologies at the time. One this case I began to explore the potential of Flexbox.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/fitness/index.html" title="visit the fitness site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/fitness/index.html" title="visit the fitness site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionFitness} alt="fitness" />
@@ -119,7 +120,7 @@ function NoPage() {
                                         <h3 className="project__title">Apollo Broad Band Corp</h3>
                                         <p className="project__date">July 2015</p>
                                         <p className="project__description">This project was lead by Camilo Sanchez one of founders of Apollo Broad Band Group from Colombia and myself. I got stated with the company's identity and mote as well as its projects. The brainstorming and development resulted in a small but well put website at the time</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/apollo-broadband/index.php" title="visit apollo site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/apollo-broadband/index.php" title="visit apollo site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionApollo} alt="hpp" />
@@ -132,7 +133,7 @@ function NoPage() {
                                         <h3 className="project__title">Celistics</h3>
                                         <p className="project__date">February 2011</p>
                                         <p className="project__description">During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.</p>
-                                        <p className="project__link"><a href="http://danielmoralesb.com/celistics/index.php" title="visit celistics site" target="_blank" rel="noreferrer">View site</a></p>
+                                        <p className="project__link"><a href="/celistics/index.php" title="visit celistics site" target="_blank" rel="noreferrer">View site</a></p>
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionCelistics} alt="celistics" />
@@ -169,6 +170,29 @@ function NoPage() {
                             </section>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <h2>More Projects</h2>
+                    <p className="text-center">This is a list of multiple projects that I have worked on throughout my career.</p>
+                    <ul className="project-list">
+                        <li><a href="/boogerbooks" target="_blank" title="Boogerbooks" rel="noreferrer">Boogerbooks</a></li>
+                        <li><a href="/brandly/index.html" target="_blank" title="Brandly" rel="noreferrer">Brandly</a></li>
+                        <li><a href="/diannewagner/index.php" target="_blank" title="Dianner Wagner" rel="noreferrer">Dianne Wagner</a></li>
+                        <li><a href="/goodinc/index.html" target="_blank" title="GoodInc" rel="noreferrer">GoodInc</a></li>
+                        <li><a href="/hospitality-performance-partners" target="_blank" title="Hospitality Performance Partners" rel="noreferrer">Hospitality Performance Partners</a></li>
+                        <li><a href="/jessicaweot/index.html" target="_blank" title="Jessica Weot" rel="noreferrer">Jessica Weot</a></li>
+                        <li><a href="/makeupbyyana" target="_blank" title="Makeup By Yana" rel="noreferrer">Makeup By Yana</a></li>
+                        <li><a href="/movilway/index.php" target="_blank" title="Movilway" rel="noreferrer">Movilway</a></li>
+                        <li><a href="/oneway" target="_blank" title="Oneway" rel="noreferrer">Oneway</a></li>
+                        <li><a href="/prohitsports" target="_blank" title="Prohitsports" rel="noreferrer">Prohitsports</a></li>
+                        <li><a href="/rolfingwithjorge/index.php" target="_blank" title="Rolfing with Jorge" rel="noreferrer">Rolfing with Jorge</a></li>
+                        <li><a href="/softball-tracker" target="_blank" title="Softball Tracker" rel="noreferrer">Softball Tracker</a></li>
+                        <li><a href="/tintperfectioncorp/index.html" target="_blank" title="Tint Perfection Corp" rel="noreferrer">Tint Perfection Corp</a></li>
+                        <li><a href="/your-website-studio/index.php" target="_blank" title="Your Website Studio" rel="noreferrer">Your Website Studio</a></li>
+                        <li><a href="https://mentionmeningitisb.com/" target="_blank" title="Mention Meningitis B" rel="noreferrer">Mention Meningitis B</a></li>
+                    </ul>
                 </div>
             </section>
             <Footer />

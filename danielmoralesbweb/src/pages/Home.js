@@ -59,10 +59,11 @@ function Home() {
                     <p><strong>Front-End Developer</strong> & <strong>Graphic Designer</strong> with over <strong>10 Years of Experience</strong></p>
                     <nav className="hero__nav-wrapper">
                         <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/" className="btn btn--primary btn--icon btn--icon--resume">Resume</a></li>
+                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
+                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
+                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
+                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
+                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
                 </section>
