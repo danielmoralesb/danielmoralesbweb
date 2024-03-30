@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TextSlider from "../components/TextSlider";
+import Capabilities from "../components/Capabilities";
 
 import heroDaniel from '../images/heros/hero-daniel@2x.png';
 import shiDesktop from '../images/shi/shi-desktop.svg';
@@ -161,27 +162,7 @@ function Home() {
             </div>
                 <section>
                     <h2>Capabilities</h2>
-                    <div className="capabilities">
-                        <div className="capabilities__box capabilities__box--troubleshooting">
-                            <div className="container">
-                                <h4><span className="block">Large Capacity</span> <span className="block">for Troubleshooting</span></h4>
-                                <p>My development experience has taught me how to locate and fix the root causes of HTML, CSS and JavaScript issues on existing or in-development web applications. This debugging skill also helps while trying decipher how file compiling works and styling verification while comparing web renderings to expected designs during the development process.</p>
-                            </div>
-                        </div>
-                        <div className="capabilities__box capabilities__box--designskills">
-                            <div className="container">
-                                <h4>Design Skills</h4>
-                                <p>My graphic design skills allow me to create and update screens and pages of web applications as well as multiple components, backgrounds,  icons, rasterized images, and vectors. I understand the necessary file types needed in a web application: png, jpg or svgs.</p>
-                                <p>My knowledge allows my to me choose the necessary paths (depening on the project basis) to create and render icons/images with only CSS or an Icon Library such as Font Awesome or Bootstrap.</p>
-                            </div>
-                        </div>
-                        <div className="capabilities__box capabilities__box--teamwork">
-                            <div className="container">
-                                <h4>Team Work</h4>
-                                <p>I have collaborated with multiple teams throughout my career: back-end developers, ux/ui designers and project managers. This experience helps me understand, negotiate and succeed on the team effort required to complete any project or task.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <Capabilities />
                 </section>
                 <div className="container">
                     <section className="testimonials">
