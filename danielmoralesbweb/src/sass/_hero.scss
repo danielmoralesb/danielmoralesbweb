@@ -149,7 +149,7 @@
     padding: $padding/1.5 0;
     text-align: center;
     text-decoration: none;
-    @include transition(transform, .5s, ease);
+    @include transition(all, .5s, ease);
 
     @include min-screen('md') {
         font-size: $font-size-md+.25;

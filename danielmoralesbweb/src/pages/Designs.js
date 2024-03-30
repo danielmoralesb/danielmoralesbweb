@@ -39,7 +39,7 @@ function NoPage() {
                             <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
                             <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
                             <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="http://danielmoralesb.com/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Mroales Resume" target="_blank" rel="noreferrer">Resume</a></li>
+                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -63,7 +63,7 @@ function NoPage() {
                                         <h3 className="project__title">Noha's Ark</h3>
                                         <p className="project__date">June 2013</p>
                                         <p className="project__description">Noah’s Ark is an animal sanctuary that was in need of a new website design. I was asked to create a few design variations that were inline with the design trends at the time. I provided 3 separate designs with custom variations in coloring, iconography, imagery and more.</p>
-                                        <p className="project__link"><a href="/" title="view noah's ark design">View design</a></p>
+                                        {/* <p className="project__link"><a href="/" title="view noah's ark design">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionNoahsark} alt="noah's ark" />
@@ -76,7 +76,7 @@ function NoPage() {
                                         <h3 className="project__title">NRT Expo</h3>
                                         <p className="project__date">February 2018</p>
                                         <p className="project__description">NRT expo was a client that needed a small site that provided information about the upcoming event as well as the tickets sales for it. I kept a technology look with a modern layout using the selected color palette.</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionNrt} alt="nrt expo" />
@@ -91,7 +91,7 @@ function NoPage() {
                                         <h3 className="project__title">Ignium Digital</h3>
                                         <p className="project__date">December 2019</p>
                                         <p className="project__description">Sitecore Solution COmpany, Ignium DIgital required a logo that showcased mote of the company joined by its literal flam identity. The solution was a geometric digital flame that described the company's identity in a clean way.</p>
-                                        <p className="project__link"><a href="/" title="view noah's ark design">View design</a></p>
+                                        {/* <p className="project__link"><a href="/" title="view noah's ark design">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionIgnium} alt="ignium digital" />
@@ -104,7 +104,7 @@ function NoPage() {
                                         <h3 className="project__title">Beach Auto Service</h3>
                                         <p className="project__date">November 2022</p>
                                         <p className="project__description">The new management of Beach Auto Service wanted to update their old logo to a new logo that focus on vintage muscle vehicles. By keeping the light water turquoise coloring along with new vector construted 1967 Camaro SS imagery.</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionBeachauto} alt="beachauto" />
@@ -119,7 +119,7 @@ function NoPage() {
                                         <h3 className="project__title">Seeyou</h3>
                                         <p className="project__date">March 2012</p>
                                         <p className="project__description">From 2010 to 2012 I was part of a startup company where we developed a prototype for a merchant and consumer web app where it was possible to track implementation and use of offers from merchants to consumers. I was able to design and build the front icons used all along the app.</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionSeeyou} alt="seeyou" />
@@ -132,7 +132,7 @@ function NoPage() {
                                         <h3 className="project__title">Oneway</h3>
                                         <p className="project__date">January 2012</p>
                                         <p className="project__description">As a student I took charge on a series of freelance projects for the Movilway family of companies, the iconography of for the Oneway project came from the design Identity that I developed for Movilway based on one of the biggest communication companies at the time, Skype.</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionOneway} alt="oneway" />
@@ -147,7 +147,7 @@ function NoPage() {
                                         <h3 className="project__title">Trekalert</h3>
                                         <p className="project__date">May 2012</p>
                                         <p className="project__description">As a freelance student I was able to work on the project for Trekalert, a device before smartphones that allowed you to send your detailed itinerary to your emergency contacts before you go on your hike. I created a registration page that used the elements and colors of its logo and identity.</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionTrekalert} alt="trekalert" />
@@ -160,7 +160,7 @@ function NoPage() {
                                         <h3 className="project__title">Inbound Boulder</h3>
                                         <p className="project__date">October 2014</p>
                                         <p className="project__description">As a freelance developer/designer I was able to work on the Inbound Boulder design project for a banner that was going to be used on different social media platforms</p>
-                                        <p className="project__link"><a href="/">View design</a></p>
+                                        {/* <p className="project__link"><a href="/">View design</a></p> */}
                                     </div>
                                     <div className="project__image">
                                         <img src={sectionInbound} alt="inbound" />
