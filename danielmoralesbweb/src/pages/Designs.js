@@ -2,8 +2,9 @@ import { useState } from 'react';
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
-import heroDesigns from '../images/heros/hero-designs@2x.png';
+// import heroDesigns from '../images/heros/hero-designs@2x.png';
 import sectionNoahsark from '../images/sections/section-noahsark@2x.png';
 import sectionNrt from '../images/sections/section-nrt@2x.png';
 import sectionIgnium from '../images/sections/section-ignium@2x.png';
@@ -23,13 +24,14 @@ function NoPage() {
         <div className="designs-page">
             <Header />
             <div className="container">
-                <section className="hero">
+                <Hero page="designs" />
+                {/* <section className="hero">
                     <div className="hero__inner">
                         <div className="hero__text">
                             <h1>Designs</h1>
                         </div>
                         <div className="hero__image">
-                            <img src={heroDesigns} className="hero-websites" alt="laptop with an illustrator design next to monitor displaying css code and an smartphone with and amp page next to it" />
+                            <img src={heroDesigns} className="hero-websites" alt="different designs, web, logo and icons" />
                         </div>
                     </div>
                     <p>From <strong>websites</strong> to <strong>custom graphics</strong>, icons and <strong>unique lodo desings</strong> I like to be involved on creating and finding graphic solotions in order to complete projects smoothly. </p>
@@ -42,7 +44,7 @@ function NoPage() {
                             <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
-                </section>
+                </section> */}
             </div>
             <section>
                 <h2>Categories</h2>

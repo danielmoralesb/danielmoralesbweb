@@ -2,10 +2,10 @@ import { useState } from 'react';
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import TextSlider from "../components/TextSlider";
+import Hero from "../components/Hero";
 import Capabilities from "../components/Capabilities";
+import TextSlider from "../components/TextSlider";
 
-import heroDaniel from '../images/heros/hero-daniel@2x.png';
 import shiDesktop from '../images/shi/shi-desktop.svg';
 import shiMobile from '../images/shi/shi-mobile.svg';
 import logoPhotoshop from '../images/logos/logo-photoshop.svg';
@@ -48,26 +48,7 @@ function Home() {
         <div className="home-page">
             <Header />
             <div className="container">
-                <section className="hero">
-                    <div className="hero__inner">
-                        <div className="hero__text">
-                            <h1><span className="block--xs">Daniel</span> <span className="block--xs">Morales</span></h1>
-                        </div>
-                        <div className="hero__image">
-                            <img src={heroDaniel} className="hero-daniel" alt="daniel" />
-                        </div>
-                    </div>
-                    <p><strong>Front-End Developer</strong> & <strong>Graphic Designer</strong> with over <strong>10 Years of Experience</strong></p>
-                    <nav className="hero__nav-wrapper">
-                        <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
-                        </ul>
-                    </nav>
-                </section>
+                <Hero page="home" />
                 <section className="home-intro">
                     <header className="home-intro__header">
                         <img src={shiDesktop} className="shi-desktop" alt="code and designs on multiple screens" />
