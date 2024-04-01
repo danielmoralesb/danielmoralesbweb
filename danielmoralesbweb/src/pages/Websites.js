@@ -2,8 +2,9 @@ import { useState } from 'react';
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
-import heroWebsites from '../images/heros/hero-websites@2x.png';
+// import heroWebsites from '../images/heros/hero-websites@2x.png';
 import sectionHpp from '../images/sections/section-hpp@2x.png';
 import sectionWalpeco from '../images/sections/section-walpeco@2x.png';
 import sectionAmp from '../images/sections/section-amp@2x.png';
@@ -24,7 +25,8 @@ function NoPage() {
         <div className="websites-page">
             <Header />
             <div className="container">
-                <section className="hero">
+                <Hero page="websites" />
+                {/* <section className="hero">
                     <div className="hero__inner">
                         <div className="hero__text">
                             <h1>Websites</h1>
@@ -43,7 +45,7 @@ function NoPage() {
                             <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
                         </ul>
                     </nav>
-                </section>
+                </section> */}
             </div>
             <section>
                 <h2>Categories</h2>
