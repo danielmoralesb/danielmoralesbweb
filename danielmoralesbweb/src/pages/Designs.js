@@ -25,26 +25,6 @@ function NoPage() {
             <Header />
             <div className="container">
                 <Hero page="designs" />
-                {/* <section className="hero">
-                    <div className="hero__inner">
-                        <div className="hero__text">
-                            <h1>Designs</h1>
-                        </div>
-                        <div className="hero__image">
-                            <img src={heroDesigns} className="hero-websites" alt="different designs, web, logo and icons" />
-                        </div>
-                    </div>
-                    <p>From <strong>websites</strong> to <strong>custom graphics</strong>, icons and <strong>unique lodo desings</strong> I like to be involved on creating and finding graphic solotions in order to complete projects smoothly. </p>
-                    <nav className="hero__nav-wrapper">
-                        <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
-                        </ul>
-                    </nav>
-                </section> */}
             </div>
             <section>
                 <h2>Categories</h2>

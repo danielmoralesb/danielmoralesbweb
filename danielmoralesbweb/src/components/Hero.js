@@ -1,21 +1,21 @@
 import { data } from '../data';
+import HtmlReactParser from 'html-react-parser'; 
 
 function HeroMain(selected) {
-    // let parser = new DOMParser();
-    // let descriptionHTML = parser.parseFromString(hero.description, 'text/html');
-    // let parsedDescription = descriptionHTML.body.innerHTML;
     return (
         <>
             {data.hero.map((hero, index) => (
                 selected.page === hero.page && (
-                    <><div key={index} className="hero__inner">
+                    <div key={index}><div  className="hero__inner">
                         <div className="hero__text">
                             <h1><span className="block--xs">{hero.title1}</span> <span className="block--xs">{hero.title2}</span></h1>
                         </div>
                         <div className="hero__image">
                             <img src={hero.image} className="hero-daniel" alt={hero.imageAlt} title={hero.imageTitle} />
                         </div>
-                    </div><p>{hero.description}</p></>
+                    </div>
+                    <p>{HtmlReactParser(hero.description)}</p>
+                    </div>
                 )
             ))}
         </>

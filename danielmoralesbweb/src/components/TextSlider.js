@@ -11,21 +11,24 @@ const TextSlider = () => {
 
 
     return (
-        <div className="slider-text">
-            <div className='slider-text__inner'>
-                <q>{slides[currentSlide].content}</q>
-                <h5>{slides[currentSlide].person}</h5>
+        <section className="testimonials">
+            <h2>Testimonials</h2>
+            <div className="slider-text">
+                <div className='slider-text__inner'>
+                    <q>{slides[currentSlide].content}</q>
+                    <h5>{slides[currentSlide].person}</h5>
+                </div>
+                <div className='slider-text__dots'>
+                    {slides.map((_, index) => (
+                        <button
+                            key={index}
+                            className={index === currentSlide ? 'active' : ''}
+                            onClick={() => setCurrentSlide(index)}
+                        ><span></span></button>
+                    ))}
+                </div>
             </div>
-            <div className='slider-text__dots'>
-                {slides.map((_, index) => (
-                    <button
-                        key={index}
-                        className={index === currentSlide ? 'active' : ''}
-                        onClick={() => setCurrentSlide(index)}
-                    ><span></span></button>
-                ))}
-            </div>
-        </div>
+        </section>
     );
 };
 

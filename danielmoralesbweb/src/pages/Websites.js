@@ -26,26 +26,6 @@ function NoPage() {
             <Header />
             <div className="container">
                 <Hero page="websites" />
-                {/* <section className="hero">
-                    <div className="hero__inner">
-                        <div className="hero__text">
-                            <h1>Websites</h1>
-                        </div>
-                        <div className="hero__image">
-                            <img src={heroWebsites} className="hero-websites" alt="laptop with an illustrator design next to monitor displaying css code and an smartphone with and amp page next to it" />
-                        </div>
-                    </div>
-                    <p><strong>Collaboration</strong>, <strong>adaptability</strong> and <strong>troubleshooting</strong> have always been part of my web development career. I have <strong>passion for web development</strong> and strive for <strong>finding solutions</strong> for the projects that I am involved with.</p>
-                    <nav className="hero__nav-wrapper">
-                        <ul className="hero__nav">
-                            <li className="hero__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="hero__link hero__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
-                            <li className="hero__item"><a href="https://codepen.io/danielmoralesportfolio" className="hero__link hero__link--codepen" title="codepen" target="_blank" rel="noreferrer"><span className="sr-only">Codepen</span></a></li>
-                            <li className="hero__item"><a href="https://github.com/danielmoralesb" className="hero__link hero__link--github" title="github" target="_blank" rel="noreferrer"><span className="sr-only">Github</span></a></li>
-                            <li className="hero__item"><a href="https://dribbble.com/danielmoralesb" className="hero__link hero__link--dribbble" title="dribbble" target="_blank" rel="noreferrer"><span className="sr-only">Dribbble</span></a></li>
-                            <li className="hero__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--primary btn--icon btn--icon--resume" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
-                        </ul>
-                    </nav>
-                </section> */}
             </div>
             <section>
                 <h2>Categories</h2>
