@@ -1,6 +1,7 @@
-import { data } from '../data';
 import { useState } from 'react';
-import HtmlReactParser from 'html-react-parser'; 
+import HtmlReactParser from 'html-react-parser';
+
+import { data } from '../data';
 
 function Skills() {
     const [toggleStateSkills, setToggleStateSkills] = useState(0);
