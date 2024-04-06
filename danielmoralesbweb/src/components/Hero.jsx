@@ -30,7 +30,7 @@ function HeroNav() {
                     <li key={index} className="hero__item">
                         {heroNav.name === "Resume" 
                             ? <a href={heroNav.url} className="btn btn--primary btn--icon btn--icon--resume" title={heroNav.name} target="_blank" rel="noreferrer">{heroNav.name}</a>
-                            : <a href={heroNav.url} className={`hero__link ${heroNav.style}`} title={heroNav.name} target="_blank" rel="noreferrer">
+                            : <a href={heroNav.url} className={`hero__link hero__link--${heroNav.name}`} title={heroNav.name} target="_blank" rel="noreferrer">
                             <span className="sr-only">{heroNav.name}</span>
                         </a>}
                     </li>

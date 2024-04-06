@@ -1,9 +1,15 @@
 import { useState } from 'react';
+import {data} from '../data';
 import logo from '../images/logos/daniel-morales-logo.svg';
 import logoWhite from '../images/logos/daniel-morales-logo-white.svg';
 
 function Header() {
     const [menuState, setMenuState] = useState(false);
+
+    function isActive(path) {
+        return window.location.pathname === `/${path}` ? "active" : "";
+    }
+
     return (
         <header className={menuState ? "header header--open" : "header"}>
             <div className="header__container">
@@ -21,16 +27,19 @@ function Header() {
                 </div>
                 <nav className="header__nav-wrapper">
                     <ul className="header__nav">
-                        <li className={`header__item ${isActive("websites")}`}><a href="websites" className="header__link"><span>Websites</span></a></li>
-                        <li className={`header__item ${isActive("designs")}`}><a href="designs" className="header__link"><span>Designs</span></a></li>
+                        {
+                            data.headerNav.map((nav, index) => (
+                                <li key={index} className={`header__item ${isActive(nav.url)}`}>
+                                    <a href={nav.url} className="header__link" title={nav.name}><span>{nav.name}</span></a>
+                                </li>
+                                )
+                            )
+                        }
                     </ul>
                 </nav>
             </div>
         </header>
     );
-    function isActive(path) {
-        return window.location.pathname === `/${path}` ? "active" : "";
-    }
 }
 
 export default Header;

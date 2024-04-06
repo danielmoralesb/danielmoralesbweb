@@ -52,6 +52,16 @@ import sectionTrekalert from '../src/images/sections/section-trekalert@2x.jpg';
 import sectionInbound from '../src/images/sections/section-inbound@2x.jpg';
 
 export const data = {
+    headerNav: [
+        {
+            name: "Websites",
+            url: "websites"
+        },
+        {
+            name: "Designs",
+            url: "designs"
+        }
+    ],
     hero: [
         {   
             page: "home",
@@ -84,28 +94,23 @@ export const data = {
     heroNav: [
         {
             name: "linkedin",
-            url: "https://www.linkedin.com/in/danielmoralesb/",
-            style: "hero__link--linkedin"
+            url: "https://www.linkedin.com/in/danielmoralesb/"
         },
         {
             name: "codepen",
-            url: "https://codepen.io/danielmoralesportfolio",
-            style: "hero__link--codepen"
+            url: "https://codepen.io/danielmoralesportfolio"
         },
         {
             name: "github",
-            url: "https://github.com/danielmoralesb",
-            style: "hero__link--github"
+            url: "https://github.com/danielmoralesb"
         },
         {
             name: "dribbble",
-            url: "https://dribbble.com/danielmoralesb",
-            style: "hero__link--dribbble"
+            url: "https://dribbble.com/danielmoralesb"
         },
         {
             name: "Resume",
-            url: "/Daniel_Morales_Resume_2024.pdf",
-            style: "btn btn--primary btn--icon btn--icon--resume"
+            url: "/Daniel_Morales_Resume_2024.pdf"
         }
     ],
     intro: {
@@ -565,6 +570,40 @@ export const data = {
                         image: sectionInbound
                     }
                 ]
+            }
+        ]
+    },
+    footerNav: {
+        pages: [
+            {
+                name: "Websites",
+                url: "websites"
+            },
+            {
+                name: "Designs",
+                url: "designs"
+            }
+        ],
+        platforms: [
+            {
+                name: "linkedin",
+                url: "https://www.linkedin.com/in/danielmoralesb/"
+            },
+            {
+                name: "codepen",
+                url: "https://codepen.io/danielmoralesportfolio"
+            },
+            {
+                name: "github",
+                url: "https://github.com/danielmoralesb"
+            },
+            {
+                name: "dribbble",
+                url: "https://dribbble.com/danielmoralesb"
+            },
+            {
+                name: "Resume",
+                url: "/Daniel_Morales_Resume_2024.pdf"
             }
         ]
     }
