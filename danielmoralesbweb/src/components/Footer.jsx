@@ -1,7 +1,11 @@
+import { data } from '../data';
 import logo from '../images/logos/daniel-morales-logo.svg';
 import logoGold from '../images/logos/daniel-morales-logo-gold.svg';
 
 function Footer() {
+    function isActive(path) {
+        return window.location.pathname === `/${path}` ? "active" : "";
+    }
     return (
         <footer className="footer">
             <div className="container">
@@ -12,15 +16,29 @@ function Footer() {
                 </a>
                 <nav className="footer__nav-wrapper">
                     <ul className="footer__nav">
-                        <li className={`footer__item ${isActive("websites")}`}><a href="websites" className="footer__link"><span>Websites</span></a></li>
-                        <li className={`footer__item ${isActive("designs")}`}><a href="designs" className="footer__link"><span>Designs</span></a></li>
+                        {
+                            data.footerNav.pages.map((page, index) => (
+                                <li key={index} className={`footer__item ${isActive(page.url)}`}>
+                                    <a href={page.url} className="footer__link" title={page.name}><span>{page.name}</span></a>
+                                </li>
+                                )
+                            )
+                        }
                     </ul>
                     <ul className="footer__nav footer__nav--platforms">
-                        <li className="footer__item"><a href="https://www.linkedin.com/in/danielmoralesb/" className="footer__link footer__link--linkedin" title="linkedin" target="_blank" rel="noreferrer"><span className="sr-only">Linkedin</span></a></li>
-                        <li className="footer__item"><a href="https://codepen.io/danielmoralesportfolio" className="footer__link footer__link--codepen"><span className="sr-only">Codepen</span></a></li>
-                        <li className="footer__item"><a href="https://github.com/danielmoralesb" className="footer__link footer__link--github"><span className="sr-only">Github</span></a></li>
-                        <li className="footer__item"><a href="https://dribbble.com/danielmoralesb" className="footer__link footer__link--dribbble"><span className="sr-only">Dribbble</span></a></li>
-                        <li className="footer__item"><a href="/Daniel_Morales_Resume_2024.pdf" className="btn btn--secondary btn--icon btn--icon--resume-gold" title="Daniel Morales Resume" target="_blank" rel="noreferrer">Resume</a></li>
+                        {
+                            data.footerNav.platforms.map((platform, index) => (
+                                <li key={index} className="footer__item">
+                                    {
+                                        platform.name === "Resume" 
+                                        ? <a href={platform.url} className="btn btn--secondary btn--icon btn--icon--resume-gold" title={platform.name} target="_blank" rel="noreferrer">{platform.name}</a> 
+                                        :
+                                        <a href={platform.url} className={`footer__link footer__link--${platform.name}`} title={platform.name} target="_blank" rel="noreferrer"><span className="sr-only">{platform.name}</span></a>
+                                    }
+                                </li>
+                                )
+                            )
+                        }
                     </ul>
                 </nav>
                 <div className="footer__copyright-sitemap">
@@ -33,9 +51,6 @@ function Footer() {
             </div>
         </footer>
     )
-    function isActive(path) {
-        return window.location.pathname === `/${path}` ? "active" : "";
-    }
 }
 
 export default Footer;
