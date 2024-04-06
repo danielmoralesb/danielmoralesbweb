@@ -16,9 +16,7 @@ function Home() {
                 <Skills />
             </div>
             <Capabilities />
-            <div className="container">
-                <TextSlider />
-            </div>
+            <TextSlider />
             <Footer />
         </div>
     )
