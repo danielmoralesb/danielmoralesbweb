@@ -8,9 +8,7 @@ function NoPage() {
     return (
         <div className="websites-page">
             <Header />
-            <div className="container">
-                <Hero page="websites" />
-            </div>
+            <Hero page="websites" />
             <Tabs page="websites" />
             <MoreProjects />
             <Footer />

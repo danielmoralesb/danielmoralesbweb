@@ -42,10 +42,22 @@ function HeroNav() {
 
 function Hero(props) {
     return(
-        <section className="hero">
-            <HeroMain page={props.page}/>
-            <HeroNav />
-        </section>
+        <>
+            {props.page !== "home" 
+                ?
+                <div className="container">
+                    <section className="hero">
+                        <HeroMain page={props.page}/>
+                        <HeroNav />
+                    </section>
+                </div>
+                :
+                <section className="hero">
+                    <HeroMain page={props.page}/>
+                    <HeroNav />
+                </section>
+            }
+        </>
     )
 }
 
