@@ -67,7 +67,7 @@ export const data = {
             page: "home",
             title1: "Daniel",
             title2: "Morales",
-            description: "<strong>Front-End Developer</strong> & <strong>Graphic Designer</strong> with over <strong>10 Years of Experience</strong>",
+            description: "<strong>UI Front-End Developer</strong> with over <strong>10 Years of Experience</strong>",
             image: heroDaniel,
             imageAlt: "Daniel Morales",
             imageTitle: "Daniel Morales"
@@ -124,7 +124,7 @@ export const data = {
     skills: [
         {
             title: "Design",
-            description: "I love creating layouts, icons and any other visual asset that can help a project send the expected message.",
+            description: "Passionate about transforming concepts into visual narratives, I excel in crafting layouts, icons, and visual assets that encapsulate and communicate the core message of a project. My expertise spans across leading design tools:",
             style: "skills__box--design",
             logos: [
                 {
@@ -161,7 +161,7 @@ export const data = {
         },
         {
             title: "<span class='block'>Programming</span> <span class='block'>Languages</span>",
-            description: "I strive for reusable and concise code that can achieve best results and even faster editing.",
+            description: "Dedicated to writing clean, reusable, and efficient code, I focus on delivering high-performance solutions that simplify future edits and enhancements. My programming language proficiency includes:",
             style: "skills__box--pl",
             logos: [
                 {
@@ -198,7 +198,7 @@ export const data = {
         },
         {
             title: "<span class='block'>Content</span> <span class='block'>Management</span>",
-            description: "I have being involved on multiple content management systems on various projects on my career.",
+            description: "With extensive experience in leveraging diverse content management systems, I have successfully enhanced the digital presence of various projects, making content more dynamic and accessible:",
             style: "skills__box--cm",
             logos: [
                 {
@@ -225,7 +225,7 @@ export const data = {
         },
         {
             title: "Frameworks",
-            description: "I have used multiple frameworks thrroughout my career helping projects achieve their goals.",
+            description: "Utilizing a wide array of frameworks, I have contributed to projects achieving their strategic goals by building robust, scalable, and interactive applications:",
             style: "skills__box--frameworks",
             logos: [
                 {
@@ -257,7 +257,7 @@ export const data = {
         },
         {
             title: "Version Control",
-            description: "I love creating lyouts, icons and any other visual asset that can help a project send the expected message.",
+            description: "Committed to maintaining the integrity and evolution of project codebases, I utilize version control systems to streamline collaboration and track progress efficiently:",
             style: "skills__box--versioncontrol",
             logos: [
                 {
@@ -274,7 +274,7 @@ export const data = {
         },
         {
             title: "IDE",
-            description: "I love creating lyouts, icons and any other visual asset that can help a project send the expected message.",
+            description: "My design and development workflow is powered by advanced IDEs, enabling me to bring ideas to life through a seamless coding experience:",
             style: "skills__box--ide",
             logos: [
                 {
@@ -296,7 +296,7 @@ export const data = {
         },
         {
             title: "Methodologies",
-            description: "I love creating lyouts, icons and any other visual asset that can help a project send the expected message.",
+            description: "I adopt a structured approach to web design and development, ensuring consistency, scalability, and maintainability across projects:",
             style: "skills__box--methodologies",
             logos: [
                 {
@@ -308,7 +308,7 @@ export const data = {
         },
         {
             title: "CI/CD Task Runner",
-            description: "I value the use of automation, it has help my team and I save time during development.",
+            description: "I value automation for its ability to enhance team productivity and efficiency. My work contributes to smoother development cycles and quicker delivery times through continuous integration and deployment practices:",
             style: "skills__box--taskrunner",
             logos: [
                 {
