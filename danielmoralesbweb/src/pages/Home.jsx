@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroIntroSkills from "../components/HeroIntroSkills";
 import Capabilities from "../components/Capabilities";
-import TextSlider from "../components/TextSlider";
+import Slider from "../components/Slider";
 
 function Home() {
     return(
@@ -10,7 +10,7 @@ function Home() {
             <Header />
             <HeroIntroSkills />
             <Capabilities />
-            <TextSlider />
+            <Slider />
             <Footer />
         </div>
     )
