@@ -20,6 +20,19 @@
     }
 }
 
+.slider-text__inner {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+
+    @include min-screen('md') {
+        min-height: 250px;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+}
+
 .slider-text__dots {
     button {
         background: none;
@@ -30,12 +43,12 @@
 
         &.active {
             span {
-                background-color: $brand-primary;
+                background-color: $brand-tertiary;
             }
         }
 
         span {
-            background: $white;
+            background-color: $brand-primary;
             display: block;
             width: 10px;
             height: 10px;
