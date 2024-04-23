@@ -60,6 +60,10 @@ export const data = {
         {
             name: "Designs",
             url: "designs"
+        },
+        {
+            name: "Case Studies",
+            url: "casestudies"
         }
     ],
     hero: [
@@ -88,8 +92,16 @@ export const data = {
             image: heroDesigns,
             imageAlt: "Different designs, web, logo and icons",
             imageTitle: "Different designs, web, logo and icons"
+        },
+        {
+            page: "casestudies",
+            title1: "Case",
+            title2: "Studies",
+            description: "<strong>Design updates</strong> posed <strong>development challenges</strong> that pushed my CSS skills to their limits. I used modern <strong>CSS technologies</strong> to achieve clean, elegant layouts without duplication or complexity.",
+            image: heroDesigns,
+            imageAlt: "Different designs, web, logo and icons",
+            imageTitle: "Different designs, web, logo and icons"
         }
-        
     ],
     heroNav: [
         {
