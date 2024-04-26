@@ -50,6 +50,7 @@ import sectionSeeyou from '../src/images/sections/section-seeyou@2x.png';
 import sectionOneway from '../src/images/sections/section-oneway@2x.png';
 import sectionTrekalert from '../src/images/sections/section-trekalert@2x.jpg';
 import sectionInbound from '../src/images/sections/section-inbound@2x.jpg';
+import sectionMentionMenB from '../src/images/sections/section-mentionmenb@2x.png';
 
 export const data = {
     headerNav: [
@@ -582,6 +583,22 @@ export const data = {
                         image: sectionInbound
                     }
                 ]
+            }
+        ]
+    },
+    sectionList: {
+        casestudies: [
+            {
+                title: "Mention Meningitis B",
+                date: "January 2024",
+                description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
+                image: sectionMentionMenB,
+            },
+            {
+                title: "RSV in Adults",
+                date: "January 2024",
+                description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
+                image: sectionMentionMenB,
             }
         ]
     },
