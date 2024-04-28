@@ -1,6 +1,7 @@
 import heroDaniel from '../src/images/heros/hero-daniel@2x.png';
 import heroWebsites from '../src/images/heros/hero-websites@2x.png';
 import heroDesigns from '../src/images/heros/hero-designs@2x.png';
+import heroCaseStudies from '../src/images/heros/hero-castudies@2x.png';
 
 import shiDesktop from '../src/images/shi/shi-desktop.svg';
 import shiMobile from '../src/images/shi/shi-mobile.svg';
@@ -51,6 +52,7 @@ import sectionOneway from '../src/images/sections/section-oneway@2x.png';
 import sectionTrekalert from '../src/images/sections/section-trekalert@2x.jpg';
 import sectionInbound from '../src/images/sections/section-inbound@2x.jpg';
 import sectionMentionMenB from '../src/images/sections/section-mentionmenb@2x.png';
+import sectionRSV from '../src/images/sections/section-rsv@2x.png';
 
 export const data = {
     headerNav: [
@@ -99,7 +101,7 @@ export const data = {
             title1: "Case",
             title2: "Studies",
             description: "<strong>Design updates</strong> posed <strong>development challenges</strong> that pushed my CSS skills to their limits. I used modern <strong>CSS technologies</strong> to achieve clean, elegant layouts without duplication or complexity.",
-            image: heroDesigns,
+            image: heroCaseStudies,
             imageAlt: "Different designs, web, logo and icons",
             imageTitle: "Different designs, web, logo and icons"
         }
@@ -593,12 +595,14 @@ export const data = {
                 date: "January 2024",
                 description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
                 image: sectionMentionMenB,
+                imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
             },
             {
                 title: "RSV in Adults",
                 date: "January 2024",
-                description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
-                image: sectionMentionMenB,
+                description: "This case study outlines the process from which a design update (Adobe XD) to a section of the page Risk to Older Adults of the RSV site required a series of tasks applied to different components, including the application of modern CSS technologies.",
+                image: sectionRSV,
+                imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
             }
         ]
     },
