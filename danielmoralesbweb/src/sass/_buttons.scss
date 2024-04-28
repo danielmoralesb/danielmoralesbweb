@@ -135,6 +135,14 @@
         }
         
     }
+
+    &--link {
+        color: $text-color-tertiary;
+        font-weight: $font-weight-regular;
+        padding: 0;
+        text-decoration: underline;
+        text-transform: none;
+    }
 }
 
 a {

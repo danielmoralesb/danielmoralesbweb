@@ -19,6 +19,12 @@
             left: 50%;
             bottom: 0;
         }
+
+        &.project--list {
+            &:before {
+                display: none;
+            }
+        }
     }
 
     @include min-screen('lg') {
@@ -38,6 +44,22 @@
         grid-template-columns: 1fr 1fr fit-content(100%);
         column-gap: $margin;
         padding: 0;
+
+        .project--list & {
+            position: relative;
+
+            &:before {
+                content: '';
+                background: linear-gradient(25deg, $black -5%, transparent 55%);
+                clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+            }
+        }
     }
 }
 
@@ -87,5 +109,20 @@
             width: 400px;
             z-index: 1;
         }
+    }
+}
+
+.project__content {
+    background-color: $brand-primary;
+    display: none;
+    padding: $padding*1.5 0 0;
+
+    @include min-screen('md') {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &.show{
+        display: block;
     }
 }

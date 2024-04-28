@@ -8,7 +8,18 @@ body {
   font-family: $font-lato;
   font-size: $font-size-text;
   color: $text-color-light;
-  background: $black-pearl;
+  background-color: $black-pearl;
+  background-image: url("#{$path-img}/backgrounds/bg-closetag.svg"), url("#{$path-img}/backgrounds/bg-slash.svg");
+  background-position-x: -400px, left;
+  background-position-y: 45px, center;
+  background-size: 900px auto, 800px auto;
+  background-repeat: no-repeat;
+
+  @include min-screen('md') {
+    background-size: 1000px auto, 800px auto;
+    background-position-x: right, right;
+    background-position-y: -50px, 1300px;
+  }
 }
 
 ol,
