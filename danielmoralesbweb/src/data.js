@@ -592,6 +592,7 @@ export const data = {
         casestudies: [
             {
                 title: "Mention Meningitis B",
+                subTitle: "Mobile Development",
                 date: "January 2024",
                 description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
                 image: sectionMentionMenB,

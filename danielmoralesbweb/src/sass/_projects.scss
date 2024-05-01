@@ -11,9 +11,9 @@
         &:before {
             content: '';
             background: linear-gradient(25deg, $black -5%, transparent 55%);
-            clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
             display: block;
-            width: 100%;
+            width: 50%;
             height: 100%;
             position: absolute;
             left: 50%;
@@ -44,8 +44,11 @@
         grid-template-columns: 1fr 1fr fit-content(100%);
         column-gap: $margin;
         padding: 0;
+    }
 
-        .project--list & {
+    .project--list & {
+        @include min-screen('md') {
+            display: block;
             position: relative;
 
             &:before {
@@ -53,7 +56,7 @@
                 background: linear-gradient(25deg, $black -5%, transparent 55%);
                 clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
                 display: block;
-                width: 100%;
+                width: 50%;
                 height: 100%;
                 position: absolute;
                 left: 50%;
@@ -63,10 +66,49 @@
     }
 }
 
+.project__inner__inner {
+    @include min-screen('md') {
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr fit-content(100%);
+        column-gap: $margin;
+        padding: 0;
+    }
+
+}
+
 .project__title {
     @include min-screen('md') {
         margin-top: $margin*3;
+
+        .project--list & {
+            margin-top: 0;
+            padding-top: $padding*3;
+        }
     }
+
+    &.project__title--hassubitle {
+        display: flex;
+    }
+}
+
+.project__subtitle {
+    display: flex;
+    align-items: center;
+}
+.project__subtitle__text {
+    
+    color: $text-color-light;
+    font-weight: $font-weight-light;
+    font-size: $font-size-md;
+}
+
+.project__pipe {
+    background-color: $text-color-light;
+    display: block;
+    height: 2px;
+    width: 41px;
+    transform: rotate(102deg);
 }
 
 .project__date {
