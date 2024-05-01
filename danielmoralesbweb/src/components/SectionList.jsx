@@ -17,14 +17,16 @@ function SectionList(props) {
                 data.sectionList[props.page].map((section, index) => (
                     <section key={index} className="project project--list">
                         <div className="project__inner container">
-                            <div className="project__text">
-                                <h3 className="project__title">{section.title}</h3>
-                                <p className="project__date">{section.date}</p>
-                                <p className="project__description">{section.description}</p>
-                                <p className="project__link"><button className="btn btn--link" onClick={() => toggleThis(index)}>View case</button></p>
-                            </div>
-                            <div className="project__image">
-                                <img src={section.image} alt={section.imageAlt} />
+                            <h3 className={(section.subTitle) ? "project__title project__title--hassubitle" : "project__title"}>{section.title} {(section.subTitle) ? <span className="project__subtitle"><i className="project__pipe"></i><strong className="project__subtitle__text">{section.subTitle}</strong></span> : ''}</h3>
+                            <div className="project__inner__inner">
+                                <div className="project__text">
+                                    <p className="project__date">{section.date}</p>
+                                    <p className="project__description">{section.description}</p>
+                                    <p className="project__link"><button className="btn btn--link" onClick={() => toggleThis(index)}>View case</button></p>
+                                </div>
+                                <div className="project__image">
+                                    <img src={section.image} alt={section.imageAlt} />
+                                </div>
                             </div>
                         </div>
                         <div className={`project__content container ${toggleContent[index] ? "show" : ""}`}>
