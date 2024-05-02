@@ -51,6 +51,7 @@
     }
 
     .project--list & {
+        counter-reset: section;
         @include min-screen('md') {
             display: block;
             // position: relative;
@@ -215,7 +216,7 @@
 .project__content {
     background-color: $brand-primary;
     display: none;
-    padding: $padding*1.5 0 0;
+    padding: 0 $padding;
 
     @include min-screen('md') {
         background-color: transparent;
@@ -224,5 +225,136 @@
 
     .show &{
         display: block;
+    }
+
+    h4 {
+        font-size: $font-size-lg;
+        margin-bottom: $margin*2;
+        position: relative;
+
+        &::before {
+            counter-increment: section;
+            content: counter(section);
+            font-size: $font-size-lg;
+            font-weight: $font-weight-black;
+            margin-right: $margin;
+            padding: $padding/2 $padding;
+            transform: skew(45deg);
+            position: relative;
+            z-index: 2;
+        }
+
+        &::after {
+            background-color: $brand-secondary;
+            content: '';
+            display: block;
+            height: 46px;
+            width: 52px;
+            transform: skew(160deg);
+            position: absolute;
+            left: 0;
+            top: -10px;
+            z-index: 1;
+        }
+    }
+
+    p {
+        margin-bottom: $margin;
+    }
+}
+
+.project__case-section {
+    border-top: 2px solid $brand-secondary;
+    padding: $padding*3 0;
+}
+
+.project__case-section__inner {
+    @include min-screen('md') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.project__image {
+    display: block;
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+    @include min-screen('md') {
+        width: 70%;
+    }
+
+    &.project__image-sm {
+        width: 50%;
+
+        @include min-screen('md') {
+            width: 40%;
+
+            .project__case-section__column & {
+                width: 30%;
+            }
+
+            .project__case-section__column:last-child & {
+                width: 40%;
+            }
+        }
+    }
+
+    &.project__image-skills {
+        width: 50%;
+
+        @include min-screen('md') {
+            margin: 0 $margin*3 0 0;
+        }
+    }
+}
+
+.project__case-section__column {
+    @include min-screen('md') {
+        flex: 0 0 48%;
+    }
+}
+
+.project__case-skills {
+    background-color: $brand-secondary;
+    padding: $padding*1.5 $padding*2;
+
+    @include min-screen('md') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h5 {
+        font-size: $font-size-md + .1;
+        margin-bottom: $margin*1.5;
+    }
+
+    ul {
+        padding-left: 0;
+
+        @include min-screen('md') {
+            padding-left: $padding;
+        }
+
+        li {
+            font-size: $font-size-sm + 0.1;
+            margin-bottom: $margin/2;
+            text-align: left;
+        }
+    }
+}
+
+.project__case-skills__column {
+    @include min-screen('md') {
+        flex: 0 0 60%;
+
+        &:last-child {
+            flex-basis: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
