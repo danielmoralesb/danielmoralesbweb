@@ -53,6 +53,10 @@ import sectionTrekalert from '../src/images/sections/section-trekalert@2x.jpg';
 import sectionInbound from '../src/images/sections/section-inbound@2x.jpg';
 import sectionMentionMenB from '../src/images/sections/section-mentionmenb@2x.png';
 import sectionRSV from '../src/images/sections/section-rsv@2x.png';
+import caseMenBMobileChallenge from '../src/images/cases/case-menb-mobile-challenge.svg';
+import caseMenBMobileApproach1 from '../src/images/cases/case-menb-mobile-approach1.svg';
+import caseMenBMobileApproach2 from '../src/images/cases/case-menb-mobile-approach2.svg';
+import caseSkillsMenbMobile from '../src/images/cases/case-skills-menb-mobile.svg';
 
 export const data = {
     headerNav: [
@@ -597,7 +601,25 @@ export const data = {
                 description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
                 image: sectionMentionMenB,
                 imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
-                imageCaption: "Full Screen And Close Up  Screenshots Of The Mention Meningitis B Site"
+                imageCaption: "Full Screen And Close Up  Screenshots Of The Mention Meningitis B Site",
+                challengeParagraph: "The hero image needed to expand horizontally as the viewport got wider without expanding vertically, this could cause the hero content to be pushed further down the page, making it hard to read by hiding it temporarily or completely and requiring to scroll.",
+                approachLeftParagraph: "The hero image was positioned as a background image with CSS, instead of using the IMG tag. This allowed the image to be centered and cropped as needed, while also allowing the text to be placed on top of the image.",
+                approachRightParagraph: "This approach allowed the image to be switched to a wider aspect ratio of 18:6 image when the screen width increased, while keeping the same height. This ensured that the text remained at eye level, avoiding the typical downward shift that occurs with regular responsive images.",
+                skills: [
+                    "Deep understanding of browser behavior, website responsiveness and CSS capabilities.",
+                    "Correct design and image analysis.",
+                    "Adobe Photoshop image editing.",
+                    "SCSS path variable engineering , for ease of programming and maintenance.",
+                ],
+                resultsParagraph: "As the viewport widens, the hero image expands horizontally while the hero content remains fixed, only extending its width in tandem with the viewport.",
+                imageChallenge: caseMenBMobileChallenge,
+                imageChallengeAlt: "Vector icons that display the proper and not proper way of adding the hero image to the Meniton Meningitis B site",
+                imageApproach1: caseMenBMobileApproach1,
+                imageApproach1Alt: "Vector icons that outline the position of the elements on small mobile view of the hero component of the Mention Meningitis B site",
+                imageApproach2: caseMenBMobileApproach2,
+                imageApproach2Alt: "Vector icons that outline the position of the elements on large mobile view of the hero component of the Mention Meningitis B site",
+                imageSkills: caseSkillsMenbMobile,
+                imageSkillsAlt: "Photoshop, Sass and Google Chrome logos overlaping in white",
             },
             {
                 title: "RSV in Adults",
