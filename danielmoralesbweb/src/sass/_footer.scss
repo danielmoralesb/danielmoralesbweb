@@ -12,12 +12,17 @@ footer {
 .footer__logo-link {
     display: block;
     margin: 0 auto;
-    max-width: 200px;
-    height: 76.75px;
+    max-width: 150px;
+    height: 60.16px;
     position: relative;
 
     @include min-screen('md') {
         margin: 0;
+    }
+
+    @include min-screen('lg') {
+        max-width: 200px;
+        height: 76.75px;
     }
 
     .footer__logo-image-gold {

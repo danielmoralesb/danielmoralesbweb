@@ -11,7 +11,7 @@ function HeroMain(selected) {
                             <h1><span className="block--xs">{hero.title1}</span> <span className="block--xs">{hero.title2}</span></h1>
                         </div>
                         <div className="hero__image">
-                            <img src={hero.image} className="hero-daniel" alt={hero.imageAlt} title={hero.imageTitle} />
+                            <img src={hero.image} className={`hero-${selected.page}`} alt={hero.imageAlt} title={hero.imageTitle} />
                         </div>
                     </div>
                     <p>{HtmlReactParser(hero.description)}</p>

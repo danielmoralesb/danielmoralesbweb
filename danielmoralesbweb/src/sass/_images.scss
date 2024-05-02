@@ -133,7 +133,7 @@
 }
 
 .hero {
-    &-daniel {
+    &-home {
         width: 80%;
 
         @include min-screen('md') {
@@ -141,6 +141,10 @@
         }
 
         @include min-screen('lg') {
+            width: 500px;
+        }
+
+        @include min-screen('xl') {
             width: 637px;
         }
     }
@@ -153,7 +157,7 @@
         }
 
         @include min-screen('lg') {
-            width: 400px;
+            width: 500px;
         }
 
         @include min-screen('xl') {
@@ -165,6 +169,30 @@
         width: 100%;
 
         @include min-screen('md') {
+            width: 350px;
+        }
+
+        @include min-screen('lg') {
+            width: 500px;
+        }
+
+        @include min-screen('xl') {
+            width: 664px;
+        }
+    }
+
+    &-casestudies {
+        width: 100%;
+
+        @include min-screen('md') {
+            width: 350px;
+        }
+
+        @include min-screen('lg') {
+            width: 500px;
+        }
+
+        @include min-screen('xl') {
             width: 664px;
         }
     }

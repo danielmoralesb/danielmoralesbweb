@@ -7,7 +7,7 @@ function Header() {
     const [menuState, setMenuState] = useState(false);
 
     function isActive(path) {
-        return window.location.pathname === `/${path}` ? "active" : "";
+        return window.location.pathname === `/${path}` || (window.location.pathname === '/' && path === '') ? "active" : "";
     }
 
     return (

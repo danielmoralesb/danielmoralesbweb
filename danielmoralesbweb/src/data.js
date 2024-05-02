@@ -597,6 +597,7 @@ export const data = {
                 description: "This case details creating a centered hero component across various screen sizes. This was accomplished by using a series of techniques that included the visualization (thought process), design (image formatting) and the application of modern CSS technologies (SCSS programming) to achieve the component's fluidity, even during its rendering on the most extreme use cases.",
                 image: sectionMentionMenB,
                 imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
+                imageCaption: "Full Screen And Close Up  Screenshots Of The Mention Meningitis B Site"
             },
             {
                 title: "RSV in Adults",
@@ -604,6 +605,7 @@ export const data = {
                 description: "This case study outlines the process from which a design update (Adobe XD) to a section of the page Risk to Older Adults of the RSV site required a series of tasks applied to different components, including the application of modern CSS technologies.",
                 image: sectionRSV,
                 imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
+                imageCaption: "Full Screen And Close Up  Screenshots Of The RSV in Adults Site"
             }
         ]
     },
