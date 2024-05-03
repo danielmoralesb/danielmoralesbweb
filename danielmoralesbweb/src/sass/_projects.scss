@@ -130,6 +130,10 @@
 
     @include min-screen('md') {
         padding: 0;
+
+        .designs-page & {
+            margin-bottom: $margin*5;
+        }
     }
 }
 
