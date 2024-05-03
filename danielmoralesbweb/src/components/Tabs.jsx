@@ -24,6 +24,7 @@ function Tabs(props) {
                 </div>
                 <div className="tabs__body">
                     {
+                        props.page === "websites" ? 
                         data.tabs[props.page].map((tab, index) => (
                             <div key={index} className={toggleState === index ? "tabs__content tabs__content--active" : "tabs__content"}>
                                 {
@@ -35,6 +36,25 @@ function Tabs(props) {
                                                     <p className="project__date">{project.date}</p>
                                                     <p className="project__description">{project.description}</p>
                                                     <p className="project__link"><a href={project.url} title={project.title} target="_blank" rel="noreferrer">View site</a></p>
+                                                </div>
+                                                <div className="project__image">
+                                                    <img src={project.image} alt={project.title} />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    ))
+                                }
+                            </div>
+                        )) : data.tabs[props.page].map((tab, index) => (
+                            <div key={index} className={toggleState === index ? "tabs__content tabs__content--active" : "tabs__content"}>
+                                {
+                                    tab.projects.map((project, index) => (
+                                        <section key={index} className="project">
+                                            <div className="project__inner container">
+                                                <div className="project__text">
+                                                    <h3 className="project__title">{project.title}</h3>
+                                                    <p className="project__date">{project.date}</p>
+                                                    <p className="project__description">{project.description}</p>
                                                 </div>
                                                 <div className="project__image">
                                                     <img src={project.image} alt={project.title} />
