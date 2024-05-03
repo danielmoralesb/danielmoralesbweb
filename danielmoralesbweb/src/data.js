@@ -56,7 +56,8 @@ import sectionRSV from '../src/images/sections/section-rsv@2x.png';
 import caseMenBMobileChallenge from '../src/images/cases/case-menb-mobile-challenge.svg';
 import caseMenBMobileApproach1 from '../src/images/cases/case-menb-mobile-approach1.svg';
 import caseMenBMobileApproach2 from '../src/images/cases/case-menb-mobile-approach2.svg';
-import caseSkillsMenbMobile from '../src/images/cases/case-skills-menb-mobile.svg';
+import caseMenbMobileSkills from '../src/images/cases/case-menb-mobile-skills.svg';
+import caseMenbMobileResults from '../src/images/cases/case-menb-mobile-results.png';
 
 export const data = {
     headerNav: [
@@ -618,17 +619,19 @@ export const data = {
                 imageApproach1Alt: "Vector icons that outline the position of the elements on small mobile view of the hero component of the Mention Meningitis B site",
                 imageApproach2: caseMenBMobileApproach2,
                 imageApproach2Alt: "Vector icons that outline the position of the elements on large mobile view of the hero component of the Mention Meningitis B site",
-                imageSkills: caseSkillsMenbMobile,
+                imageSkills: caseMenbMobileSkills,
                 imageSkillsAlt: "Photoshop, Sass and Google Chrome logos overlaping in white",
+                imageResults: caseMenbMobileResults,
+                imageResultsAlt: "Design alyout that describes how the hero image transitions sizes on mobile devices",
             },
-            {
-                title: "RSV in Adults",
-                date: "January 2024",
-                description: "This case study outlines the process from which a design update (Adobe XD) to a section of the page Risk to Older Adults of the RSV site required a series of tasks applied to different components, including the application of modern CSS technologies.",
-                image: sectionRSV,
-                imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
-                imageCaption: "Full Screen And Close Up  Screenshots Of The RSV in Adults Site"
-            }
+            // {
+            //     title: "RSV in Adults",
+            //     date: "January 2024",
+            //     description: "This case study outlines the process from which a design update (Adobe XD) to a section of the page Risk to Older Adults of the RSV site required a series of tasks applied to different components, including the application of modern CSS technologies.",
+            //     image: sectionRSV,
+            //     imageAlt: "A collage of screenshots fromt the Mention Meningitis B site",
+            //     imageCaption: "Full Screen And Close Up  Screenshots Of The RSV in Adults Site"
+            // }
         ]
     },
     footerNav: {

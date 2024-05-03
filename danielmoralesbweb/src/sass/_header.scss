@@ -162,9 +162,6 @@
 }
 
 .header__item {
-    &:last-child {
-        display: none;
-    }
     @include min-screen('md') {
         &:last-child {
             .header__link {
