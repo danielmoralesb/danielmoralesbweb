@@ -260,19 +260,33 @@
             transform: skew(45deg);
             position: relative;
             z-index: 2;
+
+            @include min-screen('md') {
+                font-size: 22.8596px;
+                padding: 9.525px 19.050px;
+            }
         }
 
         &::after {
             background-color: $brand-secondary;
             content: '';
             display: block;
-            height: 46px;
-            width: 52px;
+            height: 44px;
+            width: 48px;
             transform: skew(160deg);
             position: absolute;
             left: 0;
             top: -10px;
             z-index: 1;
+
+            @include min-screen('md') {
+                height: 46px;
+                width: 52px;
+            }
+
+            @include min-screen('md') {
+                height: 52px;
+            }
         }
     }
 
