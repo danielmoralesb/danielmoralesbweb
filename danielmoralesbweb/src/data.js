@@ -126,7 +126,7 @@ export const data = {
         },
         {
             name: "dribbble",
-            url: "https://dribbble.com/danielmoralesb"
+            url: "https://dribbble.com/"
         },
         {
             name: "Resume",
@@ -660,7 +660,7 @@ export const data = {
             },
             {
                 name: "dribbble",
-                url: "https://dribbble.com/danielmoralesb"
+                url: "https://dribbble.com/"
             },
             {
                 name: "Resume",
