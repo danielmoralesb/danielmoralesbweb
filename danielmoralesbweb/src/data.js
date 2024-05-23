@@ -398,10 +398,6 @@ export const data = {
                 url: "/goodinc/index.html"
             },
             {
-                name: "Hospitality Performance Partners",
-                url: "/hospitality-performance-partners"
-            },
-            {
                 name: "Jessica Weot",
                 url: "/jessicaweot/index.html"
             },
@@ -459,7 +455,7 @@ export const data = {
                         title: "Walpeco",
                         date: "February 2011",
                         description: "During my studies I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.",
-                        url: "/walpeco/index.php",
+                        url: "/walpeco/",
                         image: sectionWalpeco,
                     }
                 ]
@@ -490,14 +486,14 @@ export const data = {
                         title: "Apollo Broad Band Corp",
                         date: "July 2015",
                         description: "This project was lead by Camilo Sanchez one of founders of Apollo Broad Band Group from Colombia and myself. I got stated with the company's identity and mote as well as its projects. The brainstorming and development resulted in a small but well put website at the time.",
-                        url: "/apollo-broadband/index.php",
+                        url: "/apollo-broadband/",
                         image: sectionApollo,
                     },
                     {
                         title: "Celistics",
                         date: "February 2011",
                         description: "While in college I was presented with freelance projects for students, one of these projects was Walpeco. During my participation on this project I brought my graphic design background to project the company’s identity in a elegant and attractive way while hand coding its custom components to give differentiate it from other competitors.",
-                        url: "/celistics/index.php",
+                        url: "/celistics/",
                         image: sectionCelistics,
                     }
                 ]
