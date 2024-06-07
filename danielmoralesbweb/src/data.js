@@ -382,60 +382,64 @@ export const data = {
         description: "This is a list of multiple projects that I have worked on throughout my career.",
         projects: [
             {
-                name: "Boogerbooks",
-                url: "/boogerbooks"
-            },
-            {
-                name: "Brandly",
-                url: "/brandly/index.html"
-            },
-            {
-                name: "Dianne Wagner",
-                url: "/diannewagner/index.php"
-            },
-            {
-                name: "GoodInc",
-                url: "/goodinc/index.html"
-            },
-            {
-                name: "Jessica Weot",
-                url: "/jessicaweot/index.html"
-            },
-            {
-                name: "Makeup By Yana",
-                url: "/makeupbyyana"
-            },
-            {
-                name: "Movilway",
-                url: "/movilway/index.php"
-            },
-            {
-                name: "Oneway",
-                url: "/oneway"
-            },
-            {
                 name: "Prohitsports",
-                url: "/prohitsports"
-            },
-            {
-                name: "Rolfing with Jorge",
-                url: "/rolfingwithjorge/index.php"
-            },
-            {
-                name: "Softball Tracker",
-                url: "/softball-tracker"
+                url: "/prohitsports/"
             },
             {
                 name: "Tint Perfection Corp",
-                url: "/tintperfectioncorp/index.html"
+                url: "/tintperfectioncorp/"
             },
             {
-                name: "Your Website Studio",
-                url: "/your-website-studio/index.php"
+                name: "Jessica Weot",
+                url: "/jessicaweot/"
+            },
+            {
+                name: "Dianne Wagner",
+                url: "/diannewagner/"
+            },
+            {
+                name: "Rolfing with Jorge",
+                url: "/rolfingwithjorge/"
+            },
+            {
+                name: "Oneway",
+                url: "/oneway/"
+            },
+            {
+                name: "Brandly",
+                url: "/brandly/"
+            },
+            {
+                name: "GoodInc",
+                url: "/goodinc/"
+            },
+            {
+                name: "Softball Tracker",
+                url: "/softball-tracker/"
+            },
+            {
+                name: "Tropical Shipping",
+                url: "https://www.tropical.com/"
+            },
+            {
+                name: "GL Homes",
+                url: "https://www.glhomes.com/"
+            },
+            {
+                name: "Plough",
+                url: "https://www.plough.com/"
             },
             {
                 name: "Mention Meningitis B",
                 url: "https://mentionmeningitisb.com/"
+            },
+            {
+                name: "RSV in Adults",
+                url: "https://www.rsvinadults.com/"
+            },
+            {
+                name: "GSK Vaccination",
+                url: "https://gskvaccination.com/"
             }
         ]
     },

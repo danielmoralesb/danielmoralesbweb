@@ -59,7 +59,7 @@
         height: 57.57px;
     }
 
-    .header__logo-image-white {
+    .header__logo-image-gold {
         visibility: hidden;
         opacity: 0;
     }
@@ -72,7 +72,7 @@
             opacity: 0;
         }
 
-        .header__logo-image-white {
+        .header__logo-image-gold {
             visibility: visible;
             opacity: 1;
         }
@@ -80,7 +80,7 @@
 }
 
 .header__logo-image, 
-.header__logo-image-white {
+.header__logo-image-gold {
     position: absolute;
     top: 0;
     left: 0;
@@ -179,7 +179,7 @@
     @include transition(all, .5s, ease);
 
     .active & {
-        color: $white;
+        color: $brand-tertiary;
     }
 
     @include min-screen('md') {
@@ -189,6 +189,6 @@
     }
 
     &:hover {
-        color: $white;
+        color: $brand-tertiary;
     }
 }

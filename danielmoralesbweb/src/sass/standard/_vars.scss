@@ -28,7 +28,7 @@ $container-max-widths: (
   md: 688px,
   lg: 944px,
   xl: 1194px,
-  xxl: 1468px
+  xxl: 1468px,
 );
 $grid-breakpoints: (
   xs: 0,
@@ -36,7 +36,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 1024px,
   xl: 1274px,
-  xxl: 1548px
+  xxl: 1548px,
 );
 // ------------------------------------------------------ //
 // Columns
@@ -67,13 +67,13 @@ $yellow: #f4c340;
 $someblue: #00c0ff;
 
 $martinique: #323550;
-$mirage: #191B28;
-$tumbleweed: #DAB279;
-$ebony-clay: #22253A;
+$mirage: #191b28;
+$tumbleweed: #dab279;
+$ebony-clay: #22253a;
 $leather: #967751;
-$east-bay: #4A4E69;
+$east-bay: #4a4e69;
 
-$black-pearl: #02040C;
+$black-pearl: #02040c;
 
 $black: #000000;
 
@@ -115,16 +115,25 @@ $info: $someblue;
 // ------------------------------------------------------ //
 // Color Map
 //
-$colors: (brand-primary: $brand-primary, brand-primary-alt: $brand-primary-alt, brand-secondary: $brand-secondary, brand-tertiary: $brand-tertiary, brand-tertiary-alt: $brand-tertiary-alt, black-pearl: $black-pearl, white: $white);
+$colors: (
+  brand-primary: $brand-primary,
+  brand-primary-alt: $brand-primary-alt,
+  brand-primary-light: $brand-primary-light,
+  brand-secondary: $brand-secondary,
+  brand-tertiary: $brand-tertiary,
+  brand-tertiary-alt: $brand-tertiary-alt,
+  black-pearl: $black-pearl,
+  white: $white,
+);
 
 // ------------------------------------------------------ //
 // Typography
 // ------
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-$font-abril-fatface: 'Abril Fatface', serif;
-$font-lato: 'Lato', sans-serif;
-$font-allura: 'Allura', cursive;
+$font-abril-fatface: "Abril Fatface", serif;
+$font-lato: "Lato", sans-serif;
+$font-allura: "Allura", cursive;
 $line-height: 1.15em;
 
 $font-weight-light: 300;
